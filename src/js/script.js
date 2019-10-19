@@ -38,7 +38,7 @@ $(document).ready(function() {
         }
     }
 
-    $('.banner-content').css('height','390px');
+    $('.banner-content').css('height','40vh');
 
     setTimeout(function () {showText(".banner h1", "< JASON GUESTIN />", 0, 130);},800);
     setTimeout(function(){
