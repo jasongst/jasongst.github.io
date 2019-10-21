@@ -1,0 +1,319 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.block {
+    border-bottom: solid 1px black;
+}
+
+.a-centrer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* HEADER */
+.header {
+    top: 30px;
+    height: 60px;
+    width: 65%;
+    position: absolute;
+    background-color: white;
+    left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%);
+    border-radius: 8px;
+    z-index: 9999;
+    transition: width 0.7s, left 0.7s;
+    -webkit-box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
+    box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
+}
+
+.header .header-menu {
+    position: absolute;
+    float: left;
+    margin-left: 40px;
+    top: 20px;
+}
+
+.header .header-menu a {
+    margin-right: 20px;
+    color: black;
+}
+
+.header .header-menu a:hover{
+    color: #B53471;
+}
+
+.header .header-logo {
+    display: block;
+    text-align: center;
+}
+
+.header .header-logo img {
+    height: 60px;
+    width: 60px;
+    -moz-transition: transform 1.5s;
+    -webkit-transition: transform 1.5s;
+    transition: transform 1.5s;
+}
+
+.fixNavigation{
+    position: fixed;
+    top: 0;
+}
+
+.flip {
+    transform: rotate(360deg);
+}
+
+/* BANNER */
+.banner{
+    background: linear-gradient(-45deg, #569ac4, #8c30b0,#5b8fe3,#58bf75);
+    background-size: 400% 400%;
+    animation: changes 20s ease-in-out infinite;
+}
+
+.banner .banner-image{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/ctn1.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    opacity: 0.8;
+}
+
+.banner .banner-content{
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    border: solid 2px white;
+    transition: height 2s;
+}
+
+.banner .banner-content .contenu{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    margin: auto;
+}
+
+.banner .banner-content a{
+    margin: auto;
+}
+
+.banner h2{
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.banner a{
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+
+.banner .banner-content h1, .banner .banner-content h2{
+    color: white;
+}
+
+.banner .banner-content h1{
+    font-size: 100px;
+}
+
+@keyframes changes {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%
+    }
+    100%{
+        background-position: 0 50%
+    }
+}
+
+
+/* PRESENTATION */
+.presentation {
+    width: 100vw;
+    background-color: lavender;
+    text-align: center;
+    position: relative;
+}
+
+.presentation .contenu {
+    margin: auto;
+    padding-top: 200px;
+}
+
+.presentation .text1 {
+    text-align: right;
+    font-size: 40px;
+}
+
+.presentation .text2 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    line-height: 150%;
+}
+
+.presentation .swipe {
+    color: #4a4a4a;
+    padding-top: 2%;
+    padding-bottom: 200px;
+}
+
+.presentation .swipe:hover {
+    color: #8a8a8a;
+}
+
+.presentation .hexagon {
+    position: relative;
+    width: 300px;
+    height: 173.21px;
+    margin: 86.60px 0;
+    background-image: url(https://i.pinimg.com/236x/f6/e2/3a/f6e23a1074b4d94408935155f87355fc.jpg);
+    background-size: auto 334.8632px;
+    background-position: center;
+    border-left: solid 5px #000000;
+    border-right: solid 5px #000000;
+}
+
+.presentation .hexTop,
+.presentation .hexBottom {
+    position: absolute;
+    z-index: 1;
+    width: 212.13px;
+    height: 212.13px;
+    overflow: hidden;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background: inherit;
+    left: 38.93px;
+}
+
+.presentation .hexTop:after,
+.presentation .hexBottom:after {
+    content: "";
+    position: absolute;
+    width: 290.0000px;
+    height: 167.4315780649915px;
+    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-83.7158px);
+    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-83.7158px);
+    transform:          rotate(45deg) scaleY(1.7321) translateY(-83.7158px);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: inherit;
+}
+
+.presentation .hexTop {
+    top: -106.0660px;
+    border-top: solid 7.0711px #000000;
+    border-right: solid 7.0711px #000000;
+}
+
+.presentation .hexTop:after {
+    background-position: center top;
+}
+
+.presentation .hexBottom {
+    bottom: -106.0660px;
+    border-bottom: solid 7.0711px #000000;
+    border-left: solid 7.0711px #000000;
+}
+
+.presentation .hexBottom:after {
+    background-position: center bottom;
+}
+
+.presentation .hexagon:after {
+    content: "";
+    position: absolute;
+    top: 2.8868px;
+    left: 0;
+    width: 290.0000px;
+    height: 167.4316px;
+    z-index: 2;
+    background: inherit;
+}
+
+/* SKILLS */
+.skills {
+    background-color: white;
+    position: relative;
+    width: 100vw;
+}
+
+.skills h2{
+    padding-top: 60px;
+    text-align: center;;
+}
+
+.skills .underline{
+    margin: auto;
+    height: 4px;
+    width: 100px;
+    background-color: #4a4a4a;
+    margin-bottom: 60px;
+}
+
+.skills .columns .column h3{
+    text-align: center;
+}
+
+.skills .hexagon {
+    position: relative;
+    width: 150px;
+    height: 86.60px;
+    background-color: #c45087;
+    margin: 43.30px 0;
+}
+
+.skills .hexagon:before,
+.skills .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+}
+
+.skills .hexagon:before {
+    bottom: 100%;
+    border-bottom: 43.30px solid #c45087;
+}
+
+.skills .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 43.30px solid #c45087;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 750px) {
+    .banner .banner-content h1 {
+        font-size: 60px;
+    }
+
+    .banner .banner-content h2 {
+        font-size: 25px;
+    }
+
+    .presentation .columns .text2 {
+        font-size: 30px;
+    }
+}
