@@ -23,6 +23,21 @@ $(document).ready(function() {
             $(".header").css('left', '50%');
             $(".header").css('width', '65%');
         }
+
+
+        $('.hidden').each( function(i){
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},500);
+
+            }
+
+        });
     });
 
     // Rotation du logo
@@ -45,4 +60,6 @@ $(document).ready(function() {
         $(".banner h2").css('opacity','1');
         $(".banner a").css('opacity','1');
     },2500);
+
+
 });
