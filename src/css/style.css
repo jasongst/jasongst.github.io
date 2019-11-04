@@ -298,7 +298,7 @@ html, body {
     position: relative;
     width: 150px;
     height: 86.60px;
-    background-color: #c45087;
+    background-color: #363636;
     margin: 43.30px 0;
 }
 
@@ -313,13 +313,13 @@ html, body {
 
 .skills .hexagon:before {
     bottom: 100%;
-    border-bottom: 43.30px solid #c45087;
+    border-bottom: 43.30px solid #363636;
 }
 
 .skills .hexagon:after {
     top: 100%;
     width: 0;
-    border-top: 43.30px solid #c45087;
+    border-top: 43.30px solid #363636;
 }
 
 .skills-2 {
