@@ -332,6 +332,12 @@ html, body {
     margin-bottom: 60px;
 }
 
+.skills-2 .column p {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+
 /* Media Queries */
 @media only screen and (max-width: 750px) {
     .banner .banner-content h1 {

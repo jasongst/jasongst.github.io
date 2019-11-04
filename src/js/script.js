@@ -67,5 +67,7 @@ $(document).ready(function() {
             .start();
     },1000);
 
+    //Progress bar
+
 
 });
