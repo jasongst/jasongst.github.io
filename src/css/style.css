@@ -125,7 +125,7 @@ html, body {
     margin: auto;
 }
 
-.banner h2{
+.banner h1{
     opacity: 0;
     transition: opacity 3s;
 }
