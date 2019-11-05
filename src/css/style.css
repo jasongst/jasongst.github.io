@@ -339,6 +339,10 @@ html, body {
     color: #8a8a8a;
 }
 
+.skills-2 .other-skills .column {
+    text-align: center;
+}
+
 /* PROJECTS */
 .projects {
     background-color: #363636;
