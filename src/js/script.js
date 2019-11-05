@@ -67,7 +67,24 @@ $(document).ready(function() {
             .start();
     },1000);
 
-    //Progress bar
+    //Tabs
+    $("#tabs-all").click(function() {
+        $("#tabs-all").addClass("is-active");
+        $("#tabs-prog").removeClass("is-active");
+        $("#tabs-graph").removeClass("is-active");
+    });
+
+    $("#tabs-prog").click(function() {
+        $("#tabs-all").removeClass("is-active");
+        $("#tabs-prog").addClass("is-active");
+        $("#tabs-graph").removeClass("is-active");
+    });
+
+    $("#tabs-graph").click(function() {
+        $("#tabs-all").removeClass("is-active");
+        $("#tabs-prog").removeClass("is-active");
+        $("#tabs-graph").addClass("is-active");
+    });
 
 
 });

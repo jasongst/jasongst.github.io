@@ -178,7 +178,7 @@ html, body {
 .presentation .text2 {
     text-align: left;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 21px;
     position: relative;
     top: 10px;
     line-height: 150%;
@@ -346,21 +346,22 @@ html, body {
 }
 
 .projects .is-2 {
+    margin-bottom: 60px;
     text-align: center;
     color: white;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 750px) {
-    .banner .banner-content h1 {
-        font-size: 60px;
-    }
-
-    .banner .banner-content h2 {
-        font-size: 25px;
-    }
-
-    .presentation .columns .text2 {
-        font-size: 30px;
-    }
+.projects .tabs li a {
+    color: white;
 }
+
+.projects .tabs li a:hover {
+    background-color: #696969;
+}
+
+.projects .tabs li.is-active a {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
