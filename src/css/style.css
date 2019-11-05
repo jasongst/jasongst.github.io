@@ -185,7 +185,7 @@ html, body {
 }
 
 .presentation .swipe {
-    color: #4a4a4a;
+    color: #363636;
     margin-top: 2%;
     margin-bottom: 200px;
 }
@@ -275,14 +275,6 @@ html, body {
     width: 100vw;
 }
 
-.skills .underline{
-    margin: auto;
-    height: 4px;
-    width: 100px;
-    background-color: #4a4a4a;
-    margin-bottom: 60px;
-}
-
 .skills h3 {
     text-align: center;
 }
@@ -337,6 +329,26 @@ html, body {
     font-weight: bold;
 }
 
+.skills-2 #swipe2 {
+    color: #363636;
+    margin-top: 2%;
+    margin-bottom: 60px;
+}
+
+.skills-2 #swipe2:hover {
+    color: #8a8a8a;
+}
+
+/* PROJECTS */
+.projects {
+    background-color: #363636;
+    padding-top: 60px;
+}
+
+.projects .is-2 {
+    text-align: center;
+    color: white;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 750px) {

@@ -6,6 +6,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
         <link rel="stylesheet" href="src/css/style.css">
+        <link href="src/css/css-circular-prog-bar.css" rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
@@ -16,7 +17,7 @@
                 <nav class="header-menu">
                     <a href="#about">À PROPOS</a>
                     <a href="#skills">COMPÉTENCES</a>
-                    <a href="#">Partie3</a>
+                    <a href="#">PROJETS</a>
                     <a href="#">Partie4</a>
                 </nav>
                 <a href="#" class="header-logo"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/e/e4/G2_Esports.svg/1200px-G2_Esports.svg.png" alt="logo noir jason guestin"></a>
@@ -71,7 +72,7 @@
 
         <div class="block" style="margin-bottom: 0px; padding-bottom: 60px">
             <div class="skills-2">
-                <h1 class="title is-2">COMPÉTENCES</h1>
+                <h1 class="title is-2">COMPÉTENCES <i class="fas fa-toolbox"></i></h1>
                 <div class="container">
                     <div class="columns is-desktop">
                         <div class="column columns is-mobile hidden" style="width: 85%; margin-left: auto; margin-right: auto">
@@ -99,12 +100,40 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="easybar" id="example"></div>
+                    <div style="text-align: center"><a href="#projects"><i class="far fa-caret-square-down fa-3x swipe" id="swipe2"></i></a></div>
                 </div>
             </div>
         </div>
 
+        <!-- Projets -->
+        <div class="block" style="margin-bottom: 0px">
+            <div class="projects" id="projects">
+                <h1 class="title is-2">PROJETS <i class="fas fa-project-diagram"></i></h1>
+
+                <div class="tabs is-toggle is-toggle-rounded is-centered">
+                    <ul>
+                        <li>
+                            <a>
+                                <span class="icon is-small"><i class="fas fa-file-alt"></i></span>
+                                <span>Tous</span>
+                            </a>
+                        </li>
+                        <li class="is-active">
+                            <a>
+                                <span class="icon is-small"><i class="far fa-file-code"></i></span>
+                                <span>Programmation</span>
+                            </a>
+                        </li>
+                        <li class="is-active">
+                            <a>
+                                <span class="icon is-small"><i class="fas fa-image"></i></span>
+                                <span>Graphisme</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- Script -->
         <script
                 src="https://code.jquery.com/jquery-3.4.1.min.js"
