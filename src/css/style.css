@@ -355,6 +355,10 @@ html, body {
     color: white;
 }
 
+.projects .tabs {
+    margin-bottom: 60px;
+}
+
 .projects .tabs li a {
     color: white;
 }
@@ -369,3 +373,15 @@ html, body {
     color: black;
 }
 
+.projects .columns {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.projects .columns .column .card {
+    border-radius: 7px;
+}
+
+.projects .container {
+    margin-bottom: 60px;
+}
