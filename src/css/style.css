@@ -6,6 +6,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+.filter-color {
+    filter: invert(25%) sepia(17%) saturate(6049%) hue-rotate(322deg) brightness(96%) contrast(91%);
+}
+
 .block {
     border-bottom: solid 1px black;
 
@@ -66,7 +70,7 @@ html, body {
 }
 
 .header .header-menu a:hover{
-    color: #B53471;
+    color: #ad3145;
 }
 
 .header .header-logo {
@@ -75,8 +79,9 @@ html, body {
 }
 
 .header .header-logo img {
-    height: 60px;
-    width: 60px;
+    margin-top: 5px;
+    height: 50px;
+    width: 50px;
     -moz-transition: transform 1.5s;
     -webkit-transition: transform 1.5s;
     transition: transform 1.5s;
