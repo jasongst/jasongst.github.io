@@ -14,13 +14,19 @@
         <!-- Header -->
         <div class="block" style="margin-bottom: 0px">
             <header class="header">
-                <nav class="header-menu">
-                    <a href="#about">À PROPOS</a>
-                    <a href="#skills">COMPÉTENCES</a>
-                    <a href="#projects">PROJETS</a>
-                    <a href="#">CONTACT</a>
-                </nav>
-                <a href="#" class="header-logo"><img src="src/img/logo.svg" alt="logo jason guestin"></a>
+                <div class="columns is-mobile">
+                    <div class="column is-two-fifths header-menu" style="text-align: right">
+                        <a href="#about">À PROPOS</a>
+                        <a href="#skills">COMPÉTENCES</a>
+                    </div>
+                    <div class="column">
+                        <a href="#" class="header-logo"><img src="src/img/logo.svg" alt="logo jason guestin"></a>
+                    </div>
+                    <div class="column is-two-fifths header-menu" style="text-align: left">
+                        <a href="#projects">PROJETS</a>
+                        <a href="#">CONTACT</a>
+                    </div>
+                </div>
             </header>
         </div>
 
@@ -50,7 +56,7 @@
                     <div class="columns is-mobile" style="width: 70%; margin: 120px auto 60px auto; padding-top: 10px">
                         <div class="column text1 hidden">Bonjour ! Je m'appelle Jason, étudiant actuellement en 2ème année de DUT Informatique, comment puis-je vous être utile ?</div>
                         <div class="column text2 hidden">Je suis quelqu'un de curieux, passioné par le développement et le graphisme. Chaque projet a une importance capitale à mes yeux et
-                             est réalisé avec le maximum de sérieux et de méticulosité possible, pour satisfaire ma propre satisfaction ainsi que, surtout, celle des personnes avec lesquelles je collabore.</div>
+                             est réalisé avec le maximum de sérieux et de méticulosité possible, pour assouvir ma propre satisfaction ainsi que, surtout, celle des personnes avec lesquelles je collabore.</div>
                     </div>
                 </div>
                 <a href="#skills"><i class="far fa-caret-square-down fa-3x swipe"></i></a>
@@ -145,14 +151,12 @@
                             <div class="column">
                                 <div class="card">
                                     <div class="card-image">
-                                        <a class="eggstraunot"><figure class="image is-4by3">
-                                            <img src="src/img/eggstraunot/eggstronaut.png" alt="Screen jeu python eggstronaut">
+                                        <a class="eggstronaut"><div class="cache"></div>
+                                            <figure class="image is-4by3">
+                                            <img src="src/img/eggstronaut/eggstronaut.png" alt="Screen jeu python eggstronaut">
                                         </figure></a>
                                     </div>
                                     <div class="card-content">
-                                        <!-- <div class="tags has-addons">
-                                            <span class="tag is-dark"><i class="far fa-file-code"></i></span><span class="tag is-light">Python</span>
-                                        </div> -->
                                         <div class="content">
                                             <div class="tags has-addons">
                                                 <span class="tag is-dark"><i class="far fa-file-code"></i></span><span class="tag is-light">Python</span>
@@ -167,14 +171,17 @@
                             <div class="column">
                                 <div class="card">
                                     <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                                        </figure>
+                                        <a class="gk"><div class="cache"></div>
+                                            <figure class="image is-4by3">
+                                            <img src="src/img/gk/screen.png" alt="Screen site gafomi's klan">
+                                        </figure></a>
                                     </div>
                                     <div class="card-content">
                                         <div class="content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Phasellus nec iaculis mauris.
+                                            <div class="tags has-addons">
+                                                <span class="tag is-dark"><i class="far fa-file-code"></i></span><span class="tag is-light">HTML5 / CSS3</span>
+                                            </div>  <span class="title is-5">Gafomi's Klan</span> <br />
+                                            Site responsive statique "Gafomi's Klan"
                                             <br>
                                         </div>
                                     </div>
@@ -256,28 +263,53 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal" id="eggstraunot">
+        <div class="modal" id="eggstronaut">
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
-                    <p class="modal-card-title title is-3">Eggstraunot</p>
+                    <p class="modal-card-title title is-3">Eggstronaut</p>
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <section class="modal-card-body">
-                    <div class="slider slider-eggstraunot">
-                        <div><img src="src/img/eggstraunot/eggstronaut.png"></div>
-                        <div><img src="src/img/eggstraunot/credits.png"></div>
-                        <div><img src="src/img/eggstraunot/screen.png"></div>
-                        <div><img src="src/img/eggstraunot/victoire.png"></div>
+                    <div class="slider slider-eggstronaut">
+                        <div><img src="src/img/eggstronaut/eggstronaut.png"></div>
+                        <div><img src="src/img/eggstronaut/credits.png"></div>
+                        <div><img src="src/img/eggstronaut/screen.png"></div>
+                        <div><img src="src/img/eggstronaut/victoire.png"></div>
                     </div>
                     <div>
-                        <p><b>Technologies utilisés :</b> Python3, PyQt5, Photoshop (Pour les sprites/boutons/background) </p>
-                        <p><b>Lien du projet :</b> <a>XXX</a></p>
+                        <p><b>Technologies utilisés :</b> Python3, PyQt5, MySQL, Photoshop (Pour les sprites/boutons/background) </p>
+                        <p><b>Lien du projet :</b> <a>https://github.com/jasongst/python-eggstronaut</a></p>
                         <p><b>Nombre de joueurs :</b> 1 à 4 joueurs</p>
                         <p><b>Date :</b> Mai 2019</p>
                         <br />
                         <p><b>Description :</b><br />
-                        Jeu réalisé dans le cadre du projet tutoré de S2 reprenant les concepts de Bomberman avec le thème de l'espace.<br />Le jeu est multijoueur (En ligne ou avec écran partagé), l'IA des bots n'a pas pu être finalisé à temps.</p>
+                        Jeu réalisé dans le cadre du projet tutoré de S2 en groupe de 4 étudiants, il reprend les concepts de Bomberman avec le thème de l'espace.<br />Le jeu est multijoueur (En ligne ou avec écran partagé), l'IA des bots n'a pas pu être finalisé à temps.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="modal" id="gk">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title title is-3">Eggstronaut</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="slider slider-gk">
+                        <div><img src="src/img/gk/screen.png"></div>
+                        <div><img src="src/img/gk/screen1.png"></div>
+                        <div><img src="src/img/gk/screen2.png"></div>
+                    </div>
+                    <div>
+                        <p><b>Technologies utilisés :</b> HTML5 / CSS3 </p>
+                        <p><b>Lien du projet :</b> <a>XXX</a></p>
+                        <p><b>Date :</b> Decembre 2018</p>
+                        <br />
+                        <p><b>Description :</b><br />
+                        Site statique & responsive, réalisé from scratch. Ce site servait de page d'accueil et de redirection pour la communauté multigaming "Gafomi's Klan"</p>
                     </div>
                 </section>
             </div>
