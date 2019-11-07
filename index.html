@@ -6,7 +6,7 @@
 
         <link rel="stylesheet" href="src/css/bulma.min.css">
         <link rel="stylesheet" href="src/css/style.css">
-        <link href="src/css/css-circular-prog-bar.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
@@ -145,17 +145,19 @@
                             <div class="column">
                                 <div class="card">
                                     <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="src/img/eggstronaut.png" alt="Screen jeu python eggstronaut">
-                                        </figure>
+                                        <a class="eggstraunot"><figure class="image is-4by3">
+                                            <img src="src/img/eggstraunot/eggstronaut.png" alt="Screen jeu python eggstronaut">
+                                        </figure></a>
                                     </div>
                                     <div class="card-content">
-                                        <div class="tags has-addons">
+                                        <!-- <div class="tags has-addons">
                                             <span class="tag is-dark"><i class="far fa-file-code"></i></span><span class="tag is-light">Python</span>
-                                        </div>
+                                        </div> -->
                                         <div class="content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Phasellus nec iaculis mauris.
+                                            <div class="tags has-addons">
+                                                <span class="tag is-dark"><i class="far fa-file-code"></i></span><span class="tag is-light">Python</span>
+                                            </div>  <span class="title is-5">Eggstraunot</span> <br />
+                                            Projet tutoré S2 - Bomberman-like multijoueur
                                             <br>
                                         </div>
                                     </div>
@@ -249,20 +251,42 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+        <div class="modal" id="eggstraunot">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title title is-3">Eggstraunot</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="slider slider-eggstraunot">
+                        <div><img src="src/img/eggstraunot/eggstronaut.png"></div>
+                        <div><img src="src/img/eggstraunot/credits.png"></div>
+                        <div><img src="src/img/eggstraunot/screen.png"></div>
+                        <div><img src="src/img/eggstraunot/victoire.png"></div>
+                    </div>
+                    <div>
+                        <p><b>Technologies utilisés :</b> Python3, PyQt5, Photoshop (Pour les sprites/boutons/background) </p>
+                        <p><b>Lien du projet :</b> <a>XXX</a></p>
+                        <p><b>Nombre de joueurs :</b> 1 à 4 joueurs</p>
+                        <p><b>Date :</b> Mai 2019</p>
+                        <br />
+                        <p><b>Description :</b><br />
+                        Jeu réalisé dans le cadre du projet tutoré de S2 reprenant les concepts de Bomberman avec le thème de l'espace.<br />Le jeu est multijoueur (En ligne ou avec écran partagé), l'IA des bots n'a pas pu être finalisé à temps.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
         <!-- Script -->
-        <script
-                src="https://code.jquery.com/jquery-3.4.1.min.js"
-                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-                crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="src/js/script.js"></script>
         <script src="https://kit.fontawesome.com/d70eda5bb9.js" crossorigin="anonymous"></script>
         <script src="src/js/core.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     </body>
 </html>

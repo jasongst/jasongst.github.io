@@ -86,5 +86,25 @@ $(document).ready(function() {
         $("#tabs-graph").addClass("is-active");
     });
 
+    //Modals
+    $("a.eggstraunot").click(function() {
+        $("#eggstraunot").addClass("is-active");
+        $('.slider-eggstraunot').bxSlider({
+            auto: true,
+            pause: 2500,
+        });
+    });
 
+    $("button.delete").click(function() {
+        $(".modal").removeClass("is-active");
+    });
+
+    $("*").keyup(function(e) {
+        if (e.key === "Escape") {
+            $(".modal").removeClass("is-active");
+        }
+    });
+
+    //Carousel
 });
+
