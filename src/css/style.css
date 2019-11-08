@@ -16,7 +16,6 @@ html, body {
 
 .block {
     border-bottom: solid 1px black;
-
     display: flex;
     flex-direction: column;
     background-size: cover;
@@ -30,6 +29,10 @@ html, body {
 
 .block:nth-of-type(4) {
     background-image: url(../img/banner2.jpg);
+}
+
+.block:nth-of-type(9) {
+    background-image: url(../img/banner3.jpg)
 }
 
 .a-centrer {
@@ -288,11 +291,16 @@ html, body {
     text-align: center;
 }
 
-.skills .fond {
+.fond {
     background-color: rgba(255,255,255,0.8);
     border-radius: 15px;
     width: 80%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+    padding-top: 30px;
 }
 
 .skills .hexagon {
@@ -392,7 +400,7 @@ html, body {
 }
 
 .projects .container {
-    margin-bottom: 60px;
+    margin-bottom: 120px;
 }
 
 .cache {
@@ -414,3 +422,28 @@ html, body {
     height: 350px;
     width: 100%;
 }
+
+/* CV */
+.underline {
+    height: 5px;
+    width: 80px;
+    margin-bottom: 25px;
+    background-color: #363636;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cv .is-1 {
+    margin-bottom: 20px;
+}
+
+.cv .fond {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.cv .button {
+    margin-right: 25px;
+}
+
+/* Contact */
