@@ -334,6 +334,7 @@ html, body {
 .skills-2 {
     background-color: white;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .skills-2 .is-2 {
@@ -344,16 +345,6 @@ html, body {
 .skills-2 .column p {
     margin-bottom: 12px;
     font-weight: bold;
-}
-
-.skills-2 #swipe2 {
-    color: #363636;
-    margin-top: 2%;
-    margin-bottom: 60px;
-}
-
-.skills-2 #swipe2:hover {
-    color: #8a8a8a;
 }
 
 .skills-2 .other-skills .column {
@@ -442,8 +433,13 @@ html, body {
     padding-bottom: 40px;
     text-align: center;
 }
-.cv .button {
-    margin-right: 25px;
-}
 
 /* Contact */
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contact h1 {
+    text-align: center;
+}
