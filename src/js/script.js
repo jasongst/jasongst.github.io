@@ -72,18 +72,27 @@ $(document).ready(function() {
         $("#tabs-all").addClass("is-active");
         $("#tabs-prog").removeClass("is-active");
         $("#tabs-graph").removeClass("is-active");
+
+        $(".prog").show();
+        $(".graph").show();
     });
 
     $("#tabs-prog").click(function() {
         $("#tabs-all").removeClass("is-active");
         $("#tabs-prog").addClass("is-active");
         $("#tabs-graph").removeClass("is-active");
+
+        $(".prog").show();
+        $(".graph").hide();
     });
 
     $("#tabs-graph").click(function() {
         $("#tabs-all").removeClass("is-active");
         $("#tabs-prog").removeClass("is-active");
         $("#tabs-graph").addClass("is-active");
+
+        $(".graph").show();
+        $(".prog").hide();
     });
 
     //Modals
