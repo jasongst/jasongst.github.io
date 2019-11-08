@@ -40,6 +40,28 @@ $(document).ready(function() {
         });
     });
 
+    $('.banner-content').css('top', '50%');
+
+    setTimeout(function() {
+        $(".banner h1").css('opacity','1');
+        $(".banner a").css('opacity','1');
+
+
+        setTimeout(function(){
+            var typewriter = new Typewriter(demo, {
+                cursor: '_',
+                loop: true,
+            });
+            typewriter.typeString('Développeur full-stack')
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString('Étudiant en DUT Informatique')
+                .pauseFor(2500)
+                .deleteAll()
+                .start();
+        },1000);
+    },2000);
+
     // Rotation du logo
     $(".header .header-logo img").hover(function(){
         $(this).toggleClass('flip');
@@ -48,24 +70,6 @@ $(document).ready(function() {
     //Typewriter.js
     var demo = document.getElementById('twriter');
 
-
-    $(".banner h1").css('opacity','1');
-    $(".banner a").css('opacity','1');
-
-
-    setTimeout(function(){
-        var typewriter = new Typewriter(demo, {
-            cursor: '_',
-            loop: true,
-        });
-        typewriter.typeString('Développeur full-stack')
-            .pauseFor(2500)
-            .deleteAll()
-            .typeString('Étudiant en DUT Informatique')
-            .pauseFor(2500)
-            .deleteAll()
-            .start();
-    },1000);
 
     //Tabs
     $("#tabs-all").click(function() {
