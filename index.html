@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="src/css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+              integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+              crossorigin=""/>
+
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -25,7 +29,7 @@
                     </div>
                     <div class="column is-two-fifths header-menu" style="text-align: left">
                         <a href="#projects">PROJETS</a>
-                        <a href="#">CONTACT</a>
+                        <a href="#contact">CONTACT</a>
                     </div>
                 </div>
             </header>
@@ -316,7 +320,7 @@
         <div class="block" style="margin-bottom: 0px">
             <div class="cv">
                 <div class="fond"><div class="hidden">
-                    <h1 class="title is-1">Mon profil vous intérèsse ?</h1>
+                    <h1 class="title is-1">Mon profil vous intéresse ?</h1>
                     <div class="underline"></div>
                     <a href="CV_GuestinJason.pdf" target="_blank"><button class="button is-dark"><i class="fas fa-id-card"></i> 	⠀Voir mon C.V</button></a>
                 </div></div>
@@ -325,8 +329,121 @@
 
         <!-- Contact -->
         <div class="block" style="margin-bottom: 0px">
-            <div class="contact">
+            <div class="contact" id="contact">
                 <h1 class="title is-2">CONTACT⠀<i class="fas fa-envelope-open-text"></i></h1>
+
+                <div class="container">
+                    <div class="columns is-desktop">
+                        <div class="column">
+                            <div>
+                                <i class="fas fa-map-marked"></i> 	⠀<b>ADRESSE</b> <br />
+                                <span class="marge">France - 62160, Bully-les-mines</span> <br /> <br /><br />
+                            </div>
+                            <div class="pos">
+                                <i class="fas fa-phone-alt"></i> 	⠀<b>TÉLÉPHONE</b> <br />
+                                <span class="marge">+33 7 88 78 71 75</span> <br /> <br /><br />
+                            </div>
+                            <div class="pos">
+                                <i class="fas fa-at"></i> 	⠀<b>E-MAIL</b> <br />
+                                <span class="marge">jasonguestin@gmail.com</span> <br /> <br /><br />
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div id="mapid"></div>
+                        </div>
+                        <div class="column">
+                            <div class="formulaire">
+                                <div class="contact-form">
+
+                                    <div class="field">
+                                        <div class="field-label"></div>
+                                        <div class="field-body">
+                                            <div class="field is-expanded">
+                                                <div class="field has-addons">
+                                                    <p class="control">
+                                                        <a class="button is-static">
+                                                            <i class="fas fa-user"></i>
+                                                        </a>
+                                                    </p>
+                                                    <p class="control is-expanded">
+                                                        <input class="input" type="text" placeholder="Nom / Prénom">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <div class="field-label"></div>
+                                        <div class="field-body">
+                                            <div class="field is-expanded">
+                                                <div class="field has-addons">
+                                                    <p class="control">
+                                                        <a class="button is-static">
+                                                            <i class="fas fa-phone-alt"></i>
+                                                        </a>
+                                                    </p>
+                                                    <p class="control is-expanded">
+                                                        <input class="input" type="tel" placeholder="Téléphone">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <div class="field-label"></div>
+                                        <div class="field-body">
+                                            <div class="field is-expanded">
+                                                <div class="field has-addons">
+                                                    <p class="control">
+                                                        <a class="button is-static">
+                                                            <i class="fas fa-at"></i>
+                                                        </a>
+                                                    </p>
+                                                    <p class="control is-expanded">
+                                                        <input class="input" type="email" placeholder="E-mail">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="field">
+                                        <div class="control">
+                                            <textarea class="textarea" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="field lock">
+                                        <div class="field-label"></div>
+                                        <div class="field-body">
+                                            <div class="field is-expanded">
+                                                <div class="field has-addons">
+                                                    <p class="control">
+                                                        <a class="button is-static">
+                                                            <i class="fas fa-unlock"></i>
+                                                        </a>
+                                                    </p>
+                                                    <p class="control is-expanded">
+                                                        <input class="input" type="number" placeholder="27 + 2 = ?">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field is-grouped">
+                                        <div class="control">
+                                            <button class="button is-dark">Envoyer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -336,5 +453,10 @@
         <script src="https://kit.fontawesome.com/d70eda5bb9.js" crossorigin="anonymous"></script>
         <script src="src/js/core.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+                integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+                crossorigin=""></script>
+        <script type="text/javascript" src="src/js/map.js"></script>
+
     </body>
 </html>
