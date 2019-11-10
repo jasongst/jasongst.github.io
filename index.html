@@ -334,7 +334,7 @@
 
                 <div class="container">
                     <div class="columns is-desktop">
-                        <div class="column">
+                        <div class="column is-one-quarter">
                             <div>
                                 <i class="fas fa-map-marked"></i> 	⠀<b>ADRESSE</b> <br />
                                 <span class="marge">France - 62160, Bully-les-mines</span> <br /> <br /><br />
@@ -353,6 +353,14 @@
                         </div>
                         <div class="column">
                             <div class="formulaire">
+                                <div class="notification is-success">
+                                    <button class="delete"></button>
+                                    Message envoyé avec succès.
+                                </div>
+                                <div class="notification is-danger">
+                                    <button class="delete"></button>
+                                    L'envoi du message à échoué, veuillez réessayer ultérieurement.
+                                </div>
                                 <div class="contact-form">
 
                                     <div class="field">
@@ -366,7 +374,7 @@
                                                         </a>
                                                     </p>
                                                     <p class="control is-expanded">
-                                                        <input class="input" type="text" placeholder="Nom / Prénom">
+                                                        <input id="name" class="input" type="text" placeholder="Nom / Prénom" name="name">
                                                     </p>
                                                 </div>
                                             </div>
@@ -384,7 +392,7 @@
                                                         </a>
                                                     </p>
                                                     <p class="control is-expanded">
-                                                        <input class="input" type="tel" placeholder="Téléphone">
+                                                        <input id="tel" class="input" type="tel" placeholder="Téléphone" name="tel">
                                                     </p>
                                                 </div>
                                             </div>
@@ -402,7 +410,7 @@
                                                         </a>
                                                     </p>
                                                     <p class="control is-expanded">
-                                                        <input class="input" type="email" placeholder="E-mail">
+                                                        <input id="email" class="input" type="email" placeholder="E-mail" name="email">
                                                     </p>
                                                 </div>
                                             </div>
@@ -412,7 +420,7 @@
 
                                     <div class="field">
                                         <div class="control">
-                                            <textarea class="textarea" placeholder="Message"></textarea>
+                                            <textarea id="message" class="textarea" placeholder="Message" name="message"></textarea>
                                         </div>
                                     </div>
 
@@ -427,7 +435,7 @@
                                                         </a>
                                                     </p>
                                                     <p class="control is-expanded">
-                                                        <input class="input" type="number" placeholder="27 + 2 = ?">
+                                                        <input id="verif" class="input" type="number" placeholder="27 + 2 = ?" name="verif">
                                                     </p>
                                                 </div>
                                             </div>
@@ -436,7 +444,7 @@
 
                                     <div class="field is-grouped">
                                         <div class="control">
-                                            <button class="button is-dark">Envoyer</button>
+                                            <button class="button is-dark" id="send_email">Envoyer</button>
                                         </div>
                                     </div>
                                 </div>
@@ -456,7 +464,8 @@
         <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
                 integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
                 crossorigin=""></script>
-        <script type="text/javascript" src="src/js/map.js"></script>
+        <script src="src/js/map.js"></script>
+        <script src="src/js/sendmail.js"></script>
 
     </body>
 </html>

@@ -459,3 +459,11 @@ html, body {
 .contact .field.lock {
     margin-top: 50px;
 }
+
+.contact .formulaire .is-success {
+    display: none;
+}
+
+.contact .formulaire .is-danger {
+    display: none;
+}

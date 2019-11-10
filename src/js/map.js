@@ -7,5 +7,5 @@ window.onload = function(){
     });
     tileStreet.addTo(mymap);
 
-    var marker = L.marker([50.4418,2.7244]).addTo(mymap);
+    var marker = L.marker([50.4418,2.7244]).addTo(mymap).bindPopup("<b>Jason Guestin </b><br /> Développeur full-stack");
 };
