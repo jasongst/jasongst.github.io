@@ -120,10 +120,6 @@ html, body {
 .banner .banner-image{
     height: 100vh;
     width: 100vw;
-    /* background-image: url(../img/ctn1.jpg);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    opacity: 0.8; */
 }
 
 .banner .banner-content{

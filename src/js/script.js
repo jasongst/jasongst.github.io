@@ -2,13 +2,56 @@ $(document).ready(function() {
 
     var position_top_raccourci = $("header").offset().top;
 
-    var skills = $("#skills").offset().top;
-    var project = $("#projects").offset().top;
-    var about = $("#about").offset().top;
-    var contact = $("#contact").offset().top;
+    var skills = $("#skills").offset().top - 10;
+    var project = $("#projects").offset().top -10;
+    var about = $("#about").offset().top - 10;
+    var contact = $("#contact").offset().top - 10;
 
     var mid_windows = $(window).height() / 2;
     console.log(mid_windows + "px");
+
+    var lvlscroll = $(this).scrollTop();
+    // Navbar fix
+    if ($(window).scrollTop() > position_top_raccourci) {
+
+        $('.header').addClass("fixNavigation");
+        //$(".header").css('left', '0');
+        $(".header").css('width', '100%');
+    } else {
+
+        $('.header').removeClass("fixNavigation");
+        $(".header").css('left', '50%');
+        $(".header").css('width', '65%');
+    }
+
+    // Menu
+    if (lvlscroll < about){
+        $(".header-logo img").addClass("filter-color");
+        $("#lien-about").removeClass("actest");
+    }
+
+    if ((lvlscroll > about)&&(lvlscroll < skills)) {
+        $(".header-logo img").removeClass("filter-color");
+        $("#lien-skills").removeClass("actest");
+        $('#lien-about').addClass("actest");
+        console.log("Oui");
+    }
+
+    if ((lvlscroll > skills) && (lvlscroll < project)) {
+        $("#lien-about").removeClass("actest");
+        $("#lien-projet").removeClass("actest");
+        $('#lien-skills').addClass("actest");
+    }
+
+    if ((lvlscroll > project) && (lvlscroll < contact)) {
+        $("#lien-skills").removeClass("actest");
+        $("#lien-contact").removeClass("actest");
+        $('#lien-projet').addClass("actest");
+    }
+    if (lvlscroll > contact) {
+        $("#lien-projet").removeClass("actest");
+        $('#lien-contact').addClass("actest");
+    }
 
     $(window).scroll(function () {
         var lvlscroll = $(this).scrollTop();
