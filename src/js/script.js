@@ -54,7 +54,7 @@ $(document).ready(function() {
     }
 
     $(window).scroll(function () {
-        var lvlscroll = $(this).scrollTop();
+        lvlscroll = $(this).scrollTop();
         // Navbar fix
         if ($(this).scrollTop() > position_top_raccourci) {
 
@@ -139,6 +139,10 @@ $(document).ready(function() {
         $(this).toggleClass('flip');
     });
 
+    $("footer .footer-image img").hover(function(){
+        $(this).toggleClass('flip');
+    });
+
     //Typewriter.js
     var demo = document.getElementById('twriter');
 
@@ -151,6 +155,10 @@ $(document).ready(function() {
 
         $(".prog").show();
         $(".graph").show();
+
+        project = $("#projects").offset().top -10;
+        about = $("#about").offset().top - 10;
+        contact = $("#contact").offset().top - 10;
     });
 
     $("#tabs-prog").click(function() {
@@ -160,6 +168,10 @@ $(document).ready(function() {
 
         $(".prog").show();
         $(".graph").hide();
+
+        project = $("#projects").offset().top -10;
+        about = $("#about").offset().top - 10;
+        contact = $("#contact").offset().top - 10;
     });
 
     $("#tabs-graph").click(function() {
@@ -169,6 +181,10 @@ $(document).ready(function() {
 
         $(".graph").show();
         $(".prog").hide();
+
+        project = $("#projects").offset().top -10;
+        about = $("#about").offset().top - 10;
+        contact = $("#contact").offset().top - 10;
     });
 
     //Modals
