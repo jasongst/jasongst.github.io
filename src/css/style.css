@@ -337,18 +337,6 @@ html, body {
     border-top: 43.30px solid #363636;
 }
 
-.skills .hexagon:hover {
-    background-color: #3273dc;
-}
-
-.skills .hexagon:before:hover {
-    border-bottom: 43.30px solid #3273dc;
-}
-
-.skills .hexagon:after:hover {
-    border-top: 43.30px solid #3273dc;
-}
-
 .skills-2 {
     background-color: white;
     padding-top: 60px;
