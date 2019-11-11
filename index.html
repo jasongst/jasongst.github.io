@@ -59,8 +59,8 @@
                         <div class="hexBottom"></div>
                     </div>
                     <div class="columns is-mobile" style="width: 70%; margin: 120px auto 60px auto; padding-top: 10px">
-                        <div class="column text1">Bonjour ! Je m'appelle Jason, étudiant actuellement en 2ème année de DUT Informatique, comment puis-je vous être utile ?</div>
-                        <div class="column text2">Je suis quelqu'un de curieux, passioné par le développement et le graphisme. Chaque projet a une importance capitale à mes yeux et
+                        <div class="column text1 is-size-2 is-size-1-mobile">Bonjour ! Je m'appelle Jason, étudiant actuellement en 2ème année de DUT Informatique, comment puis-je vous être utile ?</div>
+                        <div class="column text2 is-size-5 is-size-4-touch is-size-3-mobile">Je suis quelqu'un de curieux, passioné par le développement et le graphisme. Chaque projet a une importance capitale à mes yeux et
                              est réalisé avec le maximum de sérieux et de méticulosité possible, pour assouvir ma propre satisfaction ainsi que, surtout, celle des personnes avec lesquelles je collabore.</div>
                     </div>
                 </div>
@@ -87,27 +87,27 @@
                 <div class="container">
                     <div class="columns is-desktop">
                         <div class="column columns is-mobile hidden" style="width: 85%; margin-left: auto; margin-right: auto">
-                            <div class="column is-one-quarter">
-                                <p> <i class="fas fa-code"></i>	HTML5/CSS3/JS </p>
-                                <p> <i class="fab fa-php"></i>	⠀PHP </p>
-                                <p> <i class="fas fa-book"></i>	⠀MySQL / PostgreSQL </p>
+                            <div class="column is-one-quarter-desktop is-one-third-touch">
+                                <p class="is-size-4-touch"> <i class="fas fa-code"></i>	HTML5/CSS3/JS </p>
+                                <p class="is-size-4-touch"> <i class="fab fa-php"></i>	⠀PHP </p>
+                                <p class="is-size-4-touch"> <i class="fas fa-book"></i>	⠀MySQL / PostgreSQL </p>
                             </div>
                             <div class="column">
-                                <progress class="progress" value="85" max="100">85%</progress>
-                                <progress class="progress" value="70" max="100">70%</progress>
-                                <progress class="progress" value="80" max="100">80%</progress>
+                                <progress class="progress is-medium" value="85" max="100">85%</progress>
+                                <progress class="progress is-medium" value="70" max="100">70%</progress>
+                                <progress class="progress is-medium" value="80" max="100">80%</progress>
                             </div>
                         </div>
                         <div class="column columns is-mobile hidden" style="width: 85%; margin-left: auto; margin-right: auto">
-                            <div class="column is-one-quarter">
-                                <p> <i class="far fa-file"></i>	⠀C++ </p>
-                                <p> <i class="fab fa-java"></i>	⠀Java </p>
-                                <p> <i class="fab fa-python"></i>	⠀Python </p>
+                            <div class="column is-one-quarter-desktop is-one-third-touch">
+                                <p class="is-size-4-touch"> <i class="far fa-file"></i>	⠀C++ </p>
+                                <p class="is-size-4-touch"> <i class="fab fa-java"></i>	⠀Java  </p>
+                                <p class="is-size-4-touch"> <i class="fab fa-python"></i>	⠀Python </p>
                             </div>
                             <div class="column">
-                                <progress class="progress" value="60" max="100">60%</progress>
-                                <progress class="progress" value="70" max="100">70%</progress>
-                                <progress class="progress" value="85" max="100">85%</progress>
+                                <progress class="progress is-medium" value="60" max="100">60%</progress>
+                                <progress class="progress is-medium" value="70" max="100">70%</progress>
+                                <progress class="progress is-medium" value="85" max="100">85%</progress>
                             </div>
                         </div>
                     </div>
@@ -151,6 +151,27 @@
                 <div class="tabs-content-all">
                     <div class="container">
                         <div class="columns is-multiline is-mobile">
+
+                            <div class="column is-one-third prog">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <a class="portfolio"><div class="cache"></div>
+                                            <figure class="image is-4by3">
+                                                <img src="src/img/portfolio/screen.png" alt="Screen portfolio jason guestin">
+                                            </figure></a>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            <div class="tags has-addons">
+                                                <span class="tag is-dark"><i class="far fa-file-code"></i></span><span class="tag is-light">HTML5 / CSS3</span>
+                                            </div>  <span class="title is-5">Jason Guestin v1</span> <br />
+                                            Portfolio "Jason Guestin", réalisé from scratch
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="column is-one-third prog">
                                 <div class="card">
                                     <div class="card-image">
@@ -185,23 +206,6 @@
                                                 <span class="tag is-dark"><i class="far fa-file-code"></i></span><span class="tag is-light">HTML5 / CSS3</span>
                                             </div>  <span class="title is-5">Gafomi's Klan</span> <br />
                                             Site responsive statique "Gafomi's Klan"
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="column is-one-third graph">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Phasellus nec iaculis mauris.
                                             <br>
                                         </div>
                                     </div>
@@ -316,13 +320,40 @@
             </div>
         </div>
 
+        <div class="modal" id="portfolio">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title title is-3">Eggstronaut</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="slider slider-portfolio">
+                        <div><img src="src/img/portfolio/screen1.png"></div>
+                        <div><img src="src/img/portfolio/screen2.png"></div>
+                        <div><img src="src/img/portfolio/screen3.png"></div>
+                        <div><img src="src/img/portfolio/screen4.png"></div>
+                        <div><img src="src/img/portfolio/screen5.png"></div>
+                    </div>
+                    <div>
+                        <p><b>Technologies utilisés :</b> HTML5 / CSS3 / JS (JQuery) / PHP / Bulma </p>
+                        <p><b>Lien du site :</b> <a href="http://jason-guestin.fr">http://jason-guestin.fr</a></p>
+                        <p><b>Date :</b> Novembre 2019</p>
+                        <br />
+                        <p><b>Description :</b><br />
+                            Création de mon site personnel en suivant les tendances actuelles du web. Le site est responsive et réalisé sans CMS (from scratch)</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
         <!-- CV -->
         <div class="block" style="margin-bottom: 0px">
             <div class="cv">
                 <div class="fond"><div class="hidden">
                     <h1 class="title is-1">Mon profil vous intéresse ?</h1>
                     <div class="underline"></div>
-                    <a href="CV_GuestinJason.pdf" target="_blank"><button class="button is-dark"><i class="fas fa-id-card"></i> 	⠀Voir mon C.V</button></a>
+                    <a href="CV_GuestinJason.pdf" target="_blank"><button class="button is-dark is-size-5-desktop is size-4-touch"><i class="fas fa-id-card"></i> 	⠀Voir mon C.V</button></a>
                 </div></div>
             </div>
         </div>
@@ -333,20 +364,37 @@
                 <h1 class="title is-2">CONTACT⠀<i class="fas fa-envelope-open-text"></i></h1>
 
                 <div class="container">
-                    <div class="columns is-desktop">
-                        <div class="column is-one-quarter">
-                            <div>
-                                <i class="fas fa-map-marked"></i> 	⠀<b>ADRESSE</b> <br />
-                                <span class="marge">France - 62160, Bully-les-mines</span> <br /> <br /><br />
-                            </div>
-                            <div class="pos">
-                                <i class="fas fa-phone-alt"></i> 	⠀<b>TÉLÉPHONE</b> <br />
-                                <span class="marge">+33 7 88 78 71 75</span> <br /> <br /><br />
-                            </div>
-                            <div class="pos">
-                                <i class="fas fa-at"></i> 	⠀<b>E-MAIL</b> <br />
-                                <span class="marge">jasonguestin@gmail.com</span> <br /> <br /><br />
-                            </div>
+                    <div class="columns is-desktop" style="margin-bottom: 10px">
+                        <div class="column is-one-quarter-desktop is-full-touch" style="margin: auto">
+                                <div class="columns is-mobile">
+                                    <div class="column is-one-fifth-desktop is-one-third-touch has-text-right">
+                                        <i class="fas fa-map-marked fa-2x"></i>
+                                    </div>
+                                    <div class="column is-size-6-desktop is-size-4-touch has-text-left">
+                                        <b>ADRESSE</b> <br />
+                                        <span>France - 62160, Bully-les-mines</span>
+                                    </div>	⠀
+                                </div>
+                                <br />
+                                <div class="columns is-mobile">
+                                    <div class="column is-one-fifth-desktop is-one-third-touch has-text-right">
+                                        <i class="fas fa-phone-alt fa-2x"></i>
+                                    </div>
+                                    <div class="column is-size-6-desktop is-size-4-touch has-text-left">
+                                        <b>TÉLÉPHONE</b> <br />
+                                        <span>+33 7 88 78 71 75</span>
+                                    </div>	⠀
+                                </div>
+                                <br />
+                                <div class="columns is-mobile">
+                                    <div class="column is-one-fifth-desktop is-one-third-touch has-text-right">
+                                        <i class="fas fa-at fa-2x"></i>
+                                    </div>
+                                    <div class="column is-size-6-desktop is-size-4-touch has-text-left">
+                                        <b>E-MAIL</b> <br />
+                                        <span>jasonguestin@gmail.com</span>
+                                    </div>	⠀
+                                </div>
                         </div>
                         <div class="column">
                             <div id="mapid"></div>
@@ -368,12 +416,12 @@
                                             <div class="field is-expanded">
                                                 <div class="field has-addons">
                                                     <p class="control">
-                                                        <a class="button is-static">
+                                                        <a class="button is-static is-medium">
                                                             <i class="fas fa-user"></i>
                                                         </a>
                                                     </p>
                                                     <p class="control is-expanded">
-                                                        <input id="name" class="input" type="text" placeholder="Nom / Prénom" name="name">
+                                                        <input id="name" class="input is-medium" type="text" placeholder="Nom / Prénom" name="name">
                                                     </p>
                                                 </div>
                                             </div>
@@ -386,12 +434,12 @@
                                             <div class="field is-expanded">
                                                 <div class="field has-addons">
                                                     <p class="control">
-                                                        <a class="button is-static">
+                                                        <a class="button is-static is-medium">
                                                             <i class="fas fa-phone-alt"></i>
                                                         </a>
                                                     </p>
                                                     <p class="control is-expanded">
-                                                        <input id="tel" class="input" type="tel" placeholder="Téléphone" name="tel">
+                                                        <input id="tel" class="input is-medium" type="tel" placeholder="Téléphone" name="tel">
                                                     </p>
                                                 </div>
                                             </div>
@@ -404,12 +452,12 @@
                                             <div class="field is-expanded">
                                                 <div class="field has-addons">
                                                     <p class="control">
-                                                        <a class="button is-static">
+                                                        <a class="button is-static is-medium">
                                                             <i class="fas fa-at"></i>
                                                         </a>
                                                     </p>
                                                     <p class="control is-expanded">
-                                                        <input id="email" class="input" type="email" placeholder="E-mail" name="email">
+                                                        <input id="email" class="input is-medium" type="email" placeholder="E-mail" name="email">
                                                     </p>
                                                 </div>
                                             </div>
@@ -430,12 +478,12 @@
                                             <div class="field is-expanded">
                                                 <div class="field has-addons">
                                                     <p class="control">
-                                                        <a class="button is-static">
+                                                        <a class="button is-static is-medium">
                                                             <i class="fas fa-unlock"></i>
                                                         </a>
                                                     </p>
                                                     <p class="control is-expanded">
-                                                        <input id="verif" class="input" type="number" placeholder="Combien font 27 + 2?" name="verif">
+                                                        <input id="verif" class="input is-medium" type="number" placeholder="Combien font 27 + 2?" name="verif">
                                                     </p>
                                                 </div>
                                             </div>
@@ -461,14 +509,14 @@
                 <div class="test">
                     <div class="container">
                         <div class="columns is-mobile">
-                            <div class="column footer-image">
+                            <div class="column is-one-fifth footer-image">
                                 <img src="src/img/logoblanc.png">
                             </div>
                             <div class="column footer-content">
-                                <p>© Jason Guestin - Tous droits réservés</p>
+                                <p class="is-size-6-desktop is-size-4-touch">© Jason Guestin - Tous droits réservés</p>
                             </div>
-                            <div class="column footer-button">
-                                <a href="#"><button class="button is-light"
+                            <div class="column is-one-fifth footer-button">
+                                <a href="#"><button class="button is-light">
                                         <span class="icon">
                                           <i class="fas fa-angle-up"></i>
                                         </span>

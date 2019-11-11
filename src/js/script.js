@@ -7,6 +7,8 @@ $(document).ready(function() {
     var about = $("#about").offset().top - 10;
     var contact = $("#contact").offset().top - 10;
 
+    console.log(contact)
+
     var mid_windows = $(window).height() / 2;
     console.log(mid_windows + "px");
 
@@ -156,9 +158,6 @@ $(document).ready(function() {
         $(".prog").show();
         $(".graph").show();
 
-        project = $("#projects").offset().top -10;
-        about = $("#about").offset().top - 10;
-        contact = $("#contact").offset().top - 10;
     });
 
     $("#tabs-prog").click(function() {
@@ -168,10 +167,6 @@ $(document).ready(function() {
 
         $(".prog").show();
         $(".graph").hide();
-
-        project = $("#projects").offset().top -10;
-        about = $("#about").offset().top - 10;
-        contact = $("#contact").offset().top - 10;
     });
 
     $("#tabs-graph").click(function() {
@@ -181,10 +176,6 @@ $(document).ready(function() {
 
         $(".graph").show();
         $(".prog").hide();
-
-        project = $("#projects").offset().top -10;
-        about = $("#about").offset().top - 10;
-        contact = $("#contact").offset().top - 10;
     });
 
     //Modals
@@ -201,6 +192,14 @@ $(document).ready(function() {
     $("a.gk").click(function() {
         $("#gk").addClass("is-active");
         carousel = $('.slider-gk').bxSlider({
+            auto: true,
+            pause: 2500,
+        });
+    });
+
+    $("a.portfolio").click(function() {
+        $("#portfolio").addClass("is-active");
+        carousel = $('.slider-portfolio').bxSlider({
             auto: true,
             pause: 2500,
         });
