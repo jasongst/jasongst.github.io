@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#send_email').click(function(e){
+    /*$('#send_email').click(function(e){
         e.preventDefault();
         var data = {
             name: $('#name').val(),
@@ -35,7 +35,43 @@ $(document).ready(function() {
                 }, 3000);
             }
         });
+    });*/
+
+    $("#ajaxForm").submit(function(e) {
+        e.preventDefault();
+        var action = $(this).attr("action");
+        $.ajax({
+            type: "POST",
+            url: action,
+            crossDomain: true,
+            data: new FormData(this),
+            dataType: "json",
+            contentType: "multipart/form-data",
+            processData: false,
+            contentType: false,
+            headers: {
+                "Accept": "application/json"
+            }
+        }).done(function () {
+            $('.contact .formulaire .is-success').css({'display': 'block'});
+            setTimeout(function () {
+                $('.contact .formulaire .is-success').css({'display': 'none'});
+                $('#name').val("");
+                $('#tel').val("");
+                $('#email').val("");
+                $('#message').val("");
+                $('#verif').val("");
+            }, 3000);
+        }).fail(function () {
+            $('.contact .formulaire .is-danger').css({'display': 'block'});
+            setTimeout(function () {
+                $('.contact .formulaire .is-danger').css({'display': 'none'});
+                $('#name').val("");
+                $('#tel').val("");
+                $('#email').val("");
+                $('#message').val("");
+                $('#verif').val("");
+            }, 3000);
+        });
     });
-
-
 });
