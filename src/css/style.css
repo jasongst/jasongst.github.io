@@ -490,6 +490,9 @@ nav .column a:hover {
     border-radius: 7px;
     margin-top: 10px;
     margin-bottom: 10px;
+    max-width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact {
@@ -514,6 +517,9 @@ nav .column a:hover {
 
 .contact .formulaire {
     margin-top: 10px;
+    max-width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact .formulaire .is-success {
