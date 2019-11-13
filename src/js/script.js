@@ -27,31 +27,31 @@ $(document).ready(function() {
 
     // Menu
     if (lvlscroll < about){
-        $(".header-logo img").addClass("filter-color");
-        $("#lien-about").removeClass("actest");
+        $(".header-logo img, .navbar-image img").addClass("filter-color");
+        $(".lien-about").removeClass("actest");
     }
 
     if ((lvlscroll > about)&&(lvlscroll < skills)) {
-        $(".header-logo img").removeClass("filter-color");
-        $("#lien-skills").removeClass("actest");
-        $('#lien-about').addClass("actest");
+        $(".header-logo img, .navbar-image img").removeClass("filter-color");
+        $(".lien-skills").removeClass("actest");
+        $('.lien-about').addClass("actest");
         console.log("Oui");
     }
 
     if ((lvlscroll > skills) && (lvlscroll < project)) {
-        $("#lien-about").removeClass("actest");
-        $("#lien-projet").removeClass("actest");
-        $('#lien-skills').addClass("actest");
+        $(".lien-about").removeClass("actest");
+        $(".lien-projet").removeClass("actest");
+        $('.lien-skills').addClass("actest");
     }
 
     if ((lvlscroll > project) && (lvlscroll < contact)) {
-        $("#lien-skills").removeClass("actest");
-        $("#lien-contact").removeClass("actest");
-        $('#lien-projet').addClass("actest");
+        $(".lien-skills").removeClass("actest");
+        $(".lien-contact").removeClass("actest");
+        $('.lien-projet').addClass("actest");
     }
     if (lvlscroll > contact) {
-        $("#lien-projet").removeClass("actest");
-        $('#lien-contact').addClass("actest");
+        $(".lien-projet").removeClass("actest");
+        $('.lien-contact').addClass("actest");
     }
 
     $(window).scroll(function () {
@@ -71,31 +71,31 @@ $(document).ready(function() {
 
         // Menu
         if (lvlscroll < about-10){
-            $(".header-logo img").addClass("filter-color");
-            $("#lien-about").removeClass("actest");
+            $(".header-logo img, .navbar-image img").addClass("filter-color");
+            $(".lien-about").removeClass("actest");
         }
 
         if ((lvlscroll > about-10)&&(lvlscroll < skills)) {
-            $(".header-logo img").removeClass("filter-color");
-            $("#lien-skills").removeClass("actest");
-            $('#lien-about').addClass("actest");
+            $(".header-logo img, .navbar-image img").removeClass("filter-color");
+            $(".lien-skills").removeClass("actest");
+            $('.lien-about').addClass("actest");
             console.log("Oui");
         }
 
         if ((lvlscroll > skills) && (lvlscroll < project)) {
-            $("#lien-about").removeClass("actest");
-            $("#lien-projet").removeClass("actest");
-            $('#lien-skills').addClass("actest");
+            $(".lien-about").removeClass("actest");
+            $(".lien-projet").removeClass("actest");
+            $('.lien-skills').addClass("actest");
         }
 
         if ((lvlscroll > project) && (lvlscroll < contact)) {
-            $("#lien-skills").removeClass("actest");
-            $("#lien-contact").removeClass("actest");
-            $('#lien-projet').addClass("actest");
+            $(".lien-skills").removeClass("actest");
+            $(".lien-contact").removeClass("actest");
+            $('.lien-projet').addClass("actest");
         }
         if (lvlscroll > contact) {
-            $("#lien-projet").removeClass("actest");
-            $('#lien-contact').addClass("actest");
+            $(".lien-projet").removeClass("actest");
+            $('.lien-contact').addClass("actest");
         }
 
 

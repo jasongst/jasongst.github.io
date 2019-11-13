@@ -18,21 +18,43 @@
     <body>
         <!-- Header -->
         <div class="block" style="margin-bottom: 0px">
-            <header class="header">
+            <header class="header is-hidden-mobile">
                 <div class="columns is-mobile">
                     <div class="column is-two-fifths header-menu" style="text-align: right">
-                        <a id="lien-about" href="#about">À PROPOS</a>
-                        <a id="lien-skills" href="#skills">COMPÉTENCES</a>
+                        <a class="lien-about" href="#about">À PROPOS</a>
+                        <a class="lien-skills" href="#skills">COMPÉTENCES</a>
                     </div>
                     <div class="column">
                         <a href="#" class="header-logo"><img src="src/img/logo.svg" alt="logo jason guestin"></a>
                     </div>
                     <div class="column is-two-fifths header-menu" style="text-align: left">
-                        <a id="lien-projet" href="#projects">PROJETS</a>
-                        <a id="lien-contact" href="#contact">CONTACT</a>
+                        <a class="lien-projet" href="#projects">PROJETS</a>
+                        <a class="lien-contact" href="#contact">CONTACT</a>
                     </div>
                 </div>
             </header>
+
+            <nav class="is-hidden-tablet">
+                <div class="columns is-mobile">
+                    <div class="column is-2">
+                        <div class="navbar-image">
+                            <a href="#"><img src="src/img/logo.svg" alt="logo jason guestin"></a>
+                        </div>
+                    </div>
+                    <div class="column text">
+                        <a class="lien-about" href="#about">À PROPOS</a>
+                    </div>
+                    <div class="column text">
+                        <a class="lien-skills" href="#skills">COMPÉTENCES</a>
+                    </div>
+                    <div class="column text">
+                        <a class="lien-projet" href="#projects">PROJETS</a>
+                    </div>
+                    <div class="column text">
+                        <a class="lien-contact" href="#contact">CONTACT</a>
+                    </div>
+                </div>
+            </nav>
         </div>
 
         <!-- Banner -->

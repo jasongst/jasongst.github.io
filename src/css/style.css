@@ -106,6 +106,50 @@ html, body {
     transition: transform 1.5s, filter 1s;
 }
 
+nav {
+    background-color: white;
+    z-index: 9999;
+    height: 9rem;
+    -webkit-box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
+    box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+nav .navbar-image {
+    margin-left: 30px;
+    position: relative;
+}
+
+nav .navbar-image img {
+    height: 6rem;
+    width: 6rem;
+    margin-top: 1.5rem;
+    transition: filter 1s;
+}
+
+nav .column.text {
+    margin-top: 3.5rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+nav .column a {
+    color: black;
+    font-size: 2rem;
+    transition: color 1s;
+}
+
+nav .column a.actest {
+    color: #8a8a8a;
+}
+
+nav .column a:hover {
+    color: #8a8a8a;
+}
+
 .fixNavigation{
     position: fixed;
     top: 0;
