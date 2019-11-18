@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jason Guestin - Portfolio</title>
+        <link rel="icon" href="logo.ico" />
+
+        <link rel="stylesheet" href="src/css/bulma.min.css">
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+              integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+              crossorigin=""/>
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="block" style="margin-bottom: 0px">
+            <header class="header is-hidden-touch">
+                <div class="columns is-mobile">
+                    <div class="column is-two-fifths header-menu" style="text-align: right">
+                        <a class="lien-about" href="#about">ABOUT</a>
+                        <a class="lien-skills" href="#skills">SKILLS</a>
+                    </div>
+                    <div class="column">
+                        <a href="#" class="header-logo"><img src="src/img/logo.svg" alt="logo jason guestin"></a>
+                    </div>
+                    <div class="column is-two-fifths header-menu" style="text-align: left">
+                        <a class="lien-projet" href="#projects">PROJECTS</a>
+                        <a class="lien-contact" href="#contact">CONTACT</a>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="is-hidden-desktop">
+                <div class="columns is-mobile">
+                    <div class="column is-2">
+                        <div class="navbar-image">
+                            <a href="#"><img src="src/img/logo.svg" alt="logo jason guestin"></a>
+                        </div>
+                    </div>
+                    <div class="column text">
+                        <a class="lien-about" href="#about">ABOUT</a>
+                    </div>
+                    <div class="column text">
+                        <a class="lien-skills" href="#skills">SKILLS</a>
+                    </div>
+                    <div class="column text">
+                        <a class="lien-projet" href="#projects">PROJECTS</a>
+                    </div>
+                    <div class="column text">
+                        <a class="lien-contact" href="#contact">CONTACT</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Banner -->
+        <div class="block" style="margin-bottom: 0px; width: 100vw; height: 100vh">
+            <div class="banner">
+                <div class="banner-image"></div>
+                <div class="container banner-content">
+                    <div class="contenu">
+                        <h1 class="title is-1">< JASON GUESTIN /></h1>
+                        <h2 class="title is-2" id="twriter">	⠀</h2>
+                        <a href="#about" class="button is-white is-medium">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Présentation  -->
+        <div class="block" style="margin-bottom: 0px">
+            <div class="presentation" id="about">
+                <div class="contenu">
+                    <div class="hexagon hidden" style="margin: auto">
+                        <div class="hexTop"></div>
+                        <div class="hexBottom"></div>
+                    </div>
+                    <div class="columns is-mobile" style="width: 70%; margin: 120px auto 60px auto; padding-top: 10px">
+                        <div class="column text1 is-size-2 is-size-1-mobile">Hello! My name is Jason, I am currently a 2nd year student in Computer Science, how may I help you?</div>
+                        <div class="column text2 is-size-5 is-size-4-touch is-size-3-mobile">I am curious, passionate about coding and graphic art. Each project has a special place in my heart and is realized with as much serious and meticulosity as humanly possible, to fulfill my own expectations as well as my customers.</div>
+                    </div>
+                </div>
+                <a href="#skills"><i class="far fa-caret-square-down fa-3x swipe"></i></a>
+            </div>
+        </div>
+
+        <!-- Compétences -->
+        <div class="block" style="margin-bottom: 0px">
+            <div class="skills" id="skills">
+                <div class="fond">
+                <div class="columns is-desktop" style="width: 80%; margin: auto; padding-top: 70px;">
+                    <div class="column" style="margin-bottom: 70px"><div class="hexagon" style="margin: auto;"><i class="fas fa-glasses fa-4x a-centrer" style="color: white;"></i></div><br /><br /><br /><h3 class="subtitle is-3"> Rigorous work </h3></div>
+                    <div class="column" style="margin-bottom: 70px"><div class="hexagon" style="margin: auto;"><i class="fas fa-ruler-combined fa-4x a-centrer" style="color: white;"></i> </div><br /><br /><br /><h3 class="subtitle is-3"> Tailored to your needs </h3></div>
+                    <div class="column" style="padding-bottom: 70px"><div class="hexagon" style="margin: auto;"><i class="far fa-heart fa-4x a-centrer" style="color: white;"></i> </div><br /><br /><br /><h3 class="subtitle is-3"> Coded with love </h3></div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block" style="margin-bottom: 0px; padding-bottom: 60px">
+            <div class="skills-2">
+                <h1 class="title is-2">SKILLS⠀<i class="fas fa-toolbox"></i></h1>
+                <div class="container">
+                    <div class="columns is-desktop">
+                        <div class="column columns is-mobile hidden" style="width: 85%; margin-left: auto; margin-right: auto">
+                            <div class="column is-one-quarter-desktop is-one-third-touch">
+                                <p class="is-size-4-touch"> <i class="fas fa-code"></i>	HTML5/CSS3/JS </p>
+                                <p class="is-size-4-touch"> <i class="fab fa-php"></i>	⠀PHP </p>
+                                <p class="is-size-4-touch"> <i class="fas fa-book"></i>	⠀MySQL / PostgreSQL </p>
+                            </div>
+                            <div class="column">
+                                <progress class="progress is-medium" value="85" max="100">85%</progress>
+                                <progress class="progress is-medium" value="70" max="100">70%</progress>
+                                <progress class="progress is-medium" value="80" max="100">80%</progress>
+                            </div>
+                        </div>
+                        <div class="column columns is-mobile hidden" style="width: 85%; margin-left: auto; margin-right: auto">
+                            <div class="column is-one-quarter-desktop is-one-third-touch">
+                                <p class="is-size-4-touch"> <i class="far fa-file"></i>	⠀C++ </p>
+                                <p class="is-size-4-touch"> <i class="fab fa-java"></i>	⠀Java  </p>
+                                <p class="is-size-4-touch"> <i class="fab fa-python"></i>	⠀Python </p>
+                            </div>
+                            <div class="column">
+                                <progress class="progress is-medium" value="60" max="100">60%</progress>
+                                <progress class="progress is-medium" value="70" max="100">70%</progress>
+                                <progress class="progress is-medium" value="85" max="100">85%</progress>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile other-skills">
+                        <div class="column"><i class="fab fa-github fa-5x"></i> <br /><br /> <h2 class="subtitle is-3">Collaborative tools</h2></div>
+                        <div class="column"><i class="fab fa-adobe fa-5x"></i> <br /><br /> <h2 class="subtitle is-3">Photoshop</h2> </div>
+                        <div class="column"><i class="fas fa-code-branch fa-5x"></i> <br /><br /> <h2 class="subtitle is-3">UML</h2> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projets -->
+        <div class="block" style="margin-bottom: 0px">
+            <div class="projects" id="projects">
+                <h1 class="title is-2">PROJECTS⠀<i class="fas fa-project-diagram"></i></h1>
+
+                <div class="tabs is-toggle is-toggle-rounded is-centered is-large">
+                    <ul>
+                        <li class="is-active" id="tabs-all">
+                            <a>
+                                <span class="icon is-small"><i class="fas fa-file-alt"></i></span>
+                                <span>All</span>
+                            </a>
+                        </li>
+                        <li id="tabs-prog">
+                            <a>
+                                <span class="icon is-small"><i class="far fa-file-code"></i></span>
+                                <span>Programming</span>
+                            </a>
+                        </li>
+                        <li id="tabs-graph">
+                            <a>
+                                <span class="icon is-small"><i class="fas fa-image"></i></span>
+                                <span>Graphic arts</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabs-content-all">
+                    <div class="container">
+                        <div class="columns is-multiline is-mobile">
+
+                            <div class="column is-one-third prog">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <a class="portfolio"><div class="cache"></div>
+                                            <figure class="image is-4by3">
+                                                <img src="src/img/portfolio/screen.png" alt="Screen portfolio jason guestin">
+                                            </figure></a>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            <div class="tags has-addons">
+                                                <span class="tag is-dark"><i class="far fa-file-code"></i></span><span class="tag is-light">HTML5 / CSS3</span>
+                                            </div>  <span class="title is-5">Jason Guestin v1</span> <br />
+                                            Portfolio "Jason Guestin", created from scratch
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column is-one-third prog">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <a class="eggstronaut"><div class="cache"></div>
+                                            <figure class="image is-4by3">
+                                            <img src="src/img/eggstronaut/eggstronaut.png" alt="Screen jeu python eggstronaut">
+                                        </figure></a>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            <div class="tags has-addons">
+                                                <span class="tag is-dark"><i class="far fa-file-code"></i></span><span class="tag is-light">Python</span>
+                                            </div>  <span class="title is-5">Eggstraunot</span> <br />
+                                            S2 Tutored Project - Multiplayer Bomberman-like
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column is-one-third prog">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <a class="gk"><div class="cache"></div>
+                                            <figure class="image is-4by3">
+                                            <img src="src/img/gk/screen.png" alt="Screen site gafomi's klan">
+                                        </figure></a>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            <div class="tags has-addons">
+                                                <span class="tag is-dark"><i class="far fa-file-code"></i></span><span class="tag is-light">HTML5 / CSS3</span>
+                                            </div>  <span class="title is-5">Gafomi's Klan</span> <br />
+                                            Responsive static Website "Gafomi's Klan"
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column is-one-third graph">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-4by3">
+                                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Phasellus nec iaculis mauris.
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column is-one-third graph">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-4by3">
+                                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Phasellus nec iaculis mauris.
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column is-one-third graph">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-4by3">
+                                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Phasellus nec iaculis mauris.
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal" id="eggstronaut">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title title is-3">Eggstronaut</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="slider slider-eggstronaut">
+                        <div><img src="src/img/eggstronaut/eggstronaut.png"></div>
+                        <div><img src="src/img/eggstronaut/credits.png"></div>
+                        <div><img src="src/img/eggstronaut/screen.png"></div>
+                        <div><img src="src/img/eggstronaut/victoire.png"></div>
+                    </div>
+                    <div>
+                        <p><b>Tools used :</b> Python3, PyQt5, MySQL, Photoshop (For the sprites/buttons/background) </p>
+                        <p><b>Project link :</b> <a href="https://github.com/jasongst/python-eggstronaut">https://github.com/jasongst/python-eggstronaut</a></p>
+                        <p><b>Number of players :</b> 1 to 4 players</p>
+                        <p><b>Date :</b> May 2019</p>
+                        <br />
+                        <p><b>Description :</b><br />
+                            Game realized in groups of 4 students, it uses the base concepts of "Bomberman" and takes place in space space.<br />It is a multiplayer game (Online or shared screen), the bot's AI couldn't be finished on time.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="modal" id="gk">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title title is-3">Gafomi's Klan</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="slider slider-gk">
+                        <div><img src="src/img/gk/screen.png"></div>
+                        <div><img src="src/img/gk/screen1.png"></div>
+                        <div><img src="src/img/gk/screen2.png"></div>
+                    </div>
+                    <div>
+                        <p><b>Tools used :</b> HTML5 / CSS3 </p>
+                        <p><b>Project link :</b> <a>XXX</a></p>
+                        <p><b>Date :</b> December 2018</p>
+                        <br />
+                        <p><b>Description :</b><br />
+                            Responsive static website, created from scratch. This website was used as a homepage for the "Gafomi's Klan"</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="modal" id="portfolio">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title title is-3">Jason Guestin v1</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="slider slider-portfolio">
+                        <div><img src="src/img/portfolio/screen1.png"></div>
+                        <div><img src="src/img/portfolio/screen2.png"></div>
+                        <div><img src="src/img/portfolio/screen3.png"></div>
+                        <div><img src="src/img/portfolio/screen4.png"></div>
+                        <div><img src="src/img/portfolio/screen5.png"></div>
+                    </div>
+                    <div>
+                        <p><b>Tools used :</b> HTML5 / CSS3 / JS (JQuery) / Bulma </p>
+                        <p><b>Website link :</b> <a href="http://jason-guestin.me">http://jason-guestin.me</a></p>
+                        <p><b>Date :</b> November 2019</p>
+                        <br />
+                        <p><b>Description :</b><br />
+                            Creation of my personal website following the current trends. The website is responsive and created without CMS (from scratch)</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- CV -->
+        <div class="block" style="margin-bottom: 0px">
+            <div class="cv">
+                <div class="fond"><div class="hidden">
+                    <h1 class="title is-1">Are you interested in my profile?</h1>
+                    <div class="underline"></div>
+                    <a href="CV_GuestinJason.pdf" target="_blank"><button class="button is-dark is-size-5-desktop is size-4-touch"><i class="fas fa-id-card"></i> 	⠀Read my resume</button></a>
+                </div></div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="block" style="margin-bottom: 0px">
+            <div class="contact" id="contact">
+                <h1 class="title is-2">CONTACT <i class="fas fa-envelope-open-text"></i></h1>
+
+                <div class="container">
+                    <div class="columns is-desktop" style="margin-bottom: 10px">
+                        <div class="column is-one-quarter-desktop is-full-touch" style="margin: auto">
+                                <div class="columns is-mobile">
+                                    <div class="column is-one-fifth-desktop is-one-third-touch has-text-right">
+                                        <i class="fas fa-map-marked fa-2x"></i>
+                                    </div>
+                                    <div class="column is-size-6-desktop is-size-4-touch has-text-left">
+                                        <b>ADRESS</b> <br />
+                                        <span>France - 62160, Bully-les-mines</span>
+                                    </div>	⠀
+                                </div>
+                                <br />
+                                <div class="columns is-mobile">
+                                    <div class="column is-one-fifth-desktop is-one-third-touch has-text-right">
+                                        <i class="fas fa-phone-alt fa-2x"></i>
+                                    </div>
+                                    <div class="column is-size-6-desktop is-size-4-touch has-text-left">
+                                        <b>PHONE</b> <br />
+                                        <span>+33 7 88 78 71 75</span>
+                                    </div>	⠀
+                                </div>
+                                <br />
+                                <div class="columns is-mobile">
+                                    <div class="column is-one-fifth-desktop is-one-third-touch has-text-right">
+                                        <i class="fas fa-at fa-2x"></i>
+                                    </div>
+                                    <div class="column is-size-6-desktop is-size-4-touch has-text-left">
+                                        <b>E-MAIL</b> <br />
+                                        <span>jasonguestin@gmail.com</span>
+                                    </div>	⠀
+                                </div>
+                        </div>
+                        <div class="column hidden">
+                            <div id="mapid"></div>
+                        </div>
+                        <div class="column">
+                            <div class="formulaire">
+                                <div class="notification is-success">
+                                    <button class="delete"></button>
+                                    The message was sent successfully.
+                                </div>
+                                <div class="notification is-danger">
+                                    <button class="delete"></button>
+                                    The message couldn't be sent. Please try again later.
+                                </div>
+                                <div class="contact-form">
+                                    <form action="https://getform.io/f/c2c16b02-4085-4d32-8a6b-c96b2aa1a777" method="POST">
+                                    <div class="field">
+                                        <div class="field-label"></div>
+                                        <div class="field-body">
+                                            <div class="field is-expanded">
+                                                <div class="field has-addons">
+                                                    <p class="control">
+                                                        <a class="button is-static is-medium">
+                                                            <i class="fas fa-user"></i>
+                                                        </a>
+                                                    </p>
+                                                    <p class="control is-expanded">
+                                                        <input id="name" class="input is-medium" type="text" placeholder="Name / Surname" name="name">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <div class="field-label"></div>
+                                        <div class="field-body">
+                                            <div class="field is-expanded">
+                                                <div class="field has-addons">
+                                                    <p class="control">
+                                                        <a class="button is-static is-medium">
+                                                            <i class="fas fa-phone-alt"></i>
+                                                        </a>
+                                                    </p>
+                                                    <p class="control is-expanded">
+                                                        <input id="tel" class="input is-medium" type="tel" placeholder="Phone" name="tel">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <div class="field-label"></div>
+                                        <div class="field-body">
+                                            <div class="field is-expanded">
+                                                <div class="field has-addons">
+                                                    <p class="control">
+                                                        <a class="button is-static is-medium">
+                                                            <i class="fas fa-at"></i>
+                                                        </a>
+                                                    </p>
+                                                    <p class="control is-expanded">
+                                                        <input id="email" class="input is-medium" type="email" placeholder="E-mail" name="email">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="field">
+                                        <div class="control">
+                                            <textarea id="message" class="textarea" placeholder="Message" name="message"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- <div class="field lock">
+                                        <div class="field-label"></div>
+                                        <div class="field-body">
+                                            <div class="field is-expanded">
+                                                <div class="field has-addons">
+                                                    <p class="control">
+                                                        <a class="button is-static is-medium">
+                                                            <i class="fas fa-unlock"></i>
+                                                        </a>
+                                                    </p>
+                                                    <p class="control is-expanded">
+                                                        <input id="verif" class="input is-medium" type="number" placeholder="Combien font 27 + 2?" name="verif">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <br /><br />
+                                    <div class="field is-grouped">
+                                        <div class="control">
+                                            <button class="button is-medium is-dark" id="send_email">Send</button>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="block" style="margin-bottom: 0px">
+            <footer>
+                <div class="test">
+                    <div class="container">
+                        <div class="columns is-mobile">
+                            <div class="column is-one-fifth footer-image">
+                                <img src="src/img/logoblanc.png">
+                            </div>
+                            <div class="column footer-content">
+                                <p class="is-size-6-desktop is-size-4-touch">© Jason Guestin - All right reserved</p>
+                            </div>
+                            <div class="column is-one-fifth footer-button">
+                                <a href="#"><button class="button is-light">
+                                        <span class="icon">
+                                          <i class="fas fa-angle-up"></i>
+                                        </span>
+                                </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="src/js/script.js"></script>
+        <script src="https://kit.fontawesome.com/d70eda5bb9.js" crossorigin="anonymous"></script>
+        <script src="src/js/core.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+                integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+                crossorigin=""></script>
+        <script src="src/js/map.js"></script>
+
+    </body>
+</html>
