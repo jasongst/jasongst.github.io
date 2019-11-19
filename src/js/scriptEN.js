@@ -130,8 +130,8 @@ $(document).ready(function() {
                 .pauseFor(2500)
                 .deleteAll()
                 .start();
-        },1000);
-    },2000);
+        },800);
+    },1500);
 
     // Rotation du logo
     $(".header .header-logo img").hover(function(){

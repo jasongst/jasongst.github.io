@@ -1,10 +1,6 @@
 @font-face {
-    font-family: Road-rage;
-    src: url(../font/Road_Rage.otf) format("opentype");
-}
-
-.banner {
-    font-family: monospace;
+    font-family: Raphtalia;
+    src: url('../font/Raphtalia.otf') format('opentype');
 }
 
 html, body {
@@ -225,9 +221,9 @@ nav .column a:hover {
 
 .banner .banner-content h1{
     font-weight: normal;
-    font-family: Road-rage;
-    text-shadow: 1px 1px 0px rgba(8,230,255,100), -1px -1px 0px rgba(255,0,0,100);
-    font-size: 120px;
+    font-family: Raphtalia;
+    text-shadow: 2px 2px 0px black, -2px -2px 0px black;
+    font-size: 200px;
 }
 
 
