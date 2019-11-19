@@ -59,7 +59,7 @@ html, body {
     top: 30px;
     height: 60px;
     width: 65%;
-    min-width: 900px;
+    min-width: 990px;
     position: absolute;
     background-color: white;
     left: 50%; /* à 50%/50% du parent référent */
@@ -104,6 +104,18 @@ html, body {
     -moz-transition: transform 1.5s;
     -webkit-transition: transform 1.5s;
     transition: transform 1.5s, filter 1s;
+}
+
+.header .dropdown-menu {
+    min-width: 100px;
+    width: 115px;
+
+}
+
+.header .dropdown {
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 nav {

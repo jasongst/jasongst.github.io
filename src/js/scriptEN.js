@@ -125,10 +125,10 @@ $(document).ready(function() {
                 cursor: '_',
                 loop: true,
             });
-            typewriter.typeString('Développeur full-stack')
+            typewriter.typeString('Full-stack developer')
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('Étudiant en DUT Informatique')
+                .typeString('Student in computer science')
                 .pauseFor(2500)
                 .deleteAll()
                 .start();
