@@ -113,8 +113,6 @@ $(document).ready(function() {
         });
     });
 
-    $('.banner-content').css('top', '50%');
-
     setTimeout(function() {
         $(".banner h1").css('opacity','1');
         $(".banner a").css('opacity','1');

@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Road-rage;
+    src: url(../font/Road_Rage.otf) format("opentype");
+}
+
+.banner {
+    font-family: monospace;
+}
 
 html, body {
     height: 100%;
@@ -179,22 +187,21 @@ nav .column a:hover {
 }
 
 .banner .banner-content{
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
+    z-index: 6600;
     position: absolute;
+    top: 0px;
     width: 100%;
+    height: 100%;
     text-align: center;
-    top: -50%; left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 20px;
-    border: solid 2px white;
-    transition: top 2s;
 }
 
 .banner .banner-content .contenu{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    position: absolute;
     width: 100%;
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .banner .banner-content a{
@@ -217,20 +224,12 @@ nav .column a:hover {
 }
 
 .banner .banner-content h1{
-    font-size: 100px;
+    font-weight: normal;
+    font-family: Road-rage;
+    text-shadow: 1px 1px 0px rgba(8,230,255,100), -1px -1px 0px rgba(255,0,0,100);
+    font-size: 120px;
 }
 
-@keyframes changes {
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%
-    }
-    100%{
-        background-position: 0 50%
-    }
-}
 
 
 /* PRESENTATION */
