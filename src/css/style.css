@@ -31,11 +31,11 @@ html, body {
     background-attachment: fixed;
 }
 
-.block:nth-of-type(2) {
+.block:nth-of-type(3) {
     background-image: url(../img/banner.jpg);
 }
 
-.block:nth-of-type(4) {
+.block:nth-of-type(5) {
     background-image: url(../img/banner2.jpg);
 }
 
@@ -43,7 +43,7 @@ html, body {
     background-image: url(../img/banner3.jpg)
 }
 
-.block:nth-of-type(3) {
+.block:nth-of-type(4) {
     background-color: #fafafa;
 }
 .a-centrer {
@@ -56,6 +56,29 @@ html, body {
 .hidden
 {
     opacity:0;
+}
+
+/* PRELOADER */
+.preloader {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f2f3;
+    z-index: 10000;
+}
+
+.preloader-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preloader-content p {
+    text-align: center;
+    font-weight: bold;
 }
 
 /* HEADER */
