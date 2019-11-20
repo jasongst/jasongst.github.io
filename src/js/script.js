@@ -204,6 +204,14 @@ $(document).ready(function() {
         });
     });
 
+    $("a.cdin").click(function() {
+        $("#cdin").addClass("is-active");
+        carousel = $('.slider-cdin').bxSlider({
+            auto: true,
+            pause: 2500,
+        });
+    });
+
     $("button.delete").click(function() {
         $(".modal").removeClass("is-active");
         carousel.destroySlider();
