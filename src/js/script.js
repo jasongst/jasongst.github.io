@@ -238,6 +238,5 @@ $(document).ready(function() {
             $(".dropdown-menu").removeClass("is-hidden");
         }
     });
-
 });
 
