@@ -10,6 +10,14 @@ html, body {
     scroll-behavior: smooth;
 }
 
+.marge {
+    margin-left: 30px;
+}
+
+.filter-color {
+    filter: invert(60%) sepia(0%) saturate(669%) hue-rotate(146deg) brightness(92%) contrast(77%);
+}
+
 .modal {
     z-index: 9000;
 }
@@ -97,6 +105,10 @@ html, body {
     padding-top: 30px;
 }
 
+.header .header-menu a.actest {
+    color: #8a8a8a;
+}
+
 .header .header-menu a {
     transition: color 1s;
     margin-right: 30px;
@@ -169,8 +181,21 @@ nav .column a {
     transition: color 1s;
 }
 
+nav .column a.actest {
+    color: #8a8a8a;
+}
+
 nav .column a:hover {
     color: #8a8a8a;
+}
+
+.fixNavigation{
+    position: fixed;
+    top: 0;
+}
+
+.flip {
+    transform: rotate(360deg);
 }
 
 /* BANNER */
@@ -509,6 +534,16 @@ nav .column a:hover {
 .contact .title {
     text-align: center;
     margin-bottom: 60px;
+}
+
+
+
+.contact .column.is-one-fifth {
+    padding-top: 15px;
+}
+
+.contact .field.lock {
+    margin-top: 50px;
 }
 
 .contact .formulaire {
