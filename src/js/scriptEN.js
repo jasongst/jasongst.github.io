@@ -11,7 +11,7 @@ $(window).on('load', function() {
                 cursor: '_',
                 loop: true,
             });
-            typewriter.typeString('Full-stack developer')
+            typewriter.typeString('Web developer')
                 .pauseFor(2500)
                 .deleteAll()
                 .typeString('Student in computer science')
