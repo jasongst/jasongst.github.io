@@ -30,10 +30,7 @@ $(document).ready(function() {
     var about = $("#about").offset().top - 10;
     var contact = $("#contact").offset().top - 10;
 
-    console.log(contact)
-
     var mid_windows = $(window).height() / 2;
-    console.log(mid_windows + "px");
 
     var lvlscroll = $(this).scrollTop();
     // Navbar fix
