@@ -304,6 +304,10 @@ nav .column a:hover {
     position: relative;
 }
 
+.presentation .contenu .columns.is-mobile {
+    margin: 120px auto 60px auto;
+}
+
 .presentation .contenu {
     margin: auto;
     padding-top: 200px;
@@ -311,12 +315,15 @@ nav .column a:hover {
 
 .presentation .text1 {
     text-align: right;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .presentation .text2 {
     text-align: left;
     font-weight: normal;
     position: relative;
+    font-size: 22px;
     top: 0px;
     line-height: 150%;
 }
