@@ -235,5 +235,26 @@ $(document).ready(function() {
             $(".dropdown-menu").removeClass("is-hidden");
         }
     });
+
+    var burger = false;
+
+    $(".navbar-burger").click(function(){
+        if (burger == false){
+            burger = true;
+            $(".navbar-burger").addClass("is-active");
+            $(".burger-on").css("top","70px");
+        }
+        else {
+            burger = false;
+            $(".navbar-burger").removeClass("is-active");
+            $(".burger-on").css("top","-100%");
+        }
+    });
+
+    $(".burger-on div a, .navbar-image a").click(function(){
+        burger = false;
+        $(".navbar-burger").removeClass("is-active");
+        $(".burger-on").css("top","-100%");
+    });
 });
 

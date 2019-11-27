@@ -148,36 +148,80 @@ html, body {
 nav {
     background-color: white;
     z-index: 9999;
-    height: 9rem;
+    height: 70px;
     -webkit-box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
     box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
 }
 
+nav .burger {
+    background-color: white;
+    z-index: 2;
+}
+
 nav .navbar-image {
-    margin-left: 30px;
+    margin-left: 15px;
     position: relative;
+    z-index: 2;
 }
 
 nav .navbar-image img {
-    height: 6rem;
-    width: 6rem;
-    margin-top: 1.5rem;
+    height: 60px;
+    width: 60px;
+    margin-top: 5px;
     transition: filter 1s;
 }
 
+nav .navbar-burger {
+    position: absolute;
+    right: 15px;
+    top: 9px;
+    display: none;
+    z-index: 2;
+}
+
+.burger-on {
+    background: white;
+    position: fixed;
+    top: -100%;
+    padding-top: 10px;
+    width: 100%;
+    transition: top 1s;
+    z-index: 1;
+}
+
+.burger-on div{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.burger-on a {
+    margin-right: 20px;
+    color: black;
+}
+
+.burger-on a:hover {
+    color: #8a8a8a;
+}
+
+nav .columns .column.is-2 {
+    min-width: 110px;
+}
+
 nav .column.text {
-    margin-top: 3.5rem;
+    margin-top: 18px;
     text-align: left;
     font-weight: bold;
 }
 
 nav .column a {
     color: black;
-    font-size: 2rem;
+    font-size: 25px;
     transition: color 1s;
 }
 
@@ -273,7 +317,7 @@ nav .column a:hover {
     text-align: left;
     font-weight: normal;
     position: relative;
-    top: 10px;
+    top: 0px;
     line-height: 150%;
 }
 
@@ -505,8 +549,8 @@ nav .column a:hover {
     margin-right: auto;
 }
 
-.cv .is-1 {
-    margin-bottom: 20px;
+.cv h1 {
+    font-size: 45px;
 }
 
 .cv .fond {
@@ -600,4 +644,69 @@ footer .footer-button .button {
 footer .footer-button .button i {
     position: relative;
     top: -5px;
+}
+
+@media screen and (max-width: 745px) {
+    nav .columns .column.text {
+        display: none;
+    }
+    nav .navbar-burger {
+        display: block;
+    }
+
+    .banner .banner-content h1 {
+        font-size: 140px;
+    }
+
+    .banner .banner-content h2 {
+        font-size: 30px;
+    }
+
+    .presentation .text1 {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .presentation .text2 {
+        font-size: 16px;
+    }
+
+    .skills-2 .container .columns .column p {
+        font-size: 20px;
+    }
+
+    .skills-2 .other-skills h2 {
+        font-size: 24px;
+    }
+
+    .projects .card .card-content {
+        padding-left: 6px;
+        padding-right: 6px;
+        text-align: center;
+    }
+
+    .projects .card .card-content .content .texte {
+        display: none;
+    }
+
+
+    .projects .card .card-content .content span.title.is-5 {
+        font-size: 14px;
+    }
+
+    .projects .card .card-content .tags span.tag {
+        font-size: 8px;
+    }
+
+    .projects .tabs ul li {
+        font-size: 15px;
+    }
+
+    .cv h1 {
+        font-size: 28px;
+    }
+
+    .contact .container .column b, .contact .container .column span{
+        font-size: 18px;
+    }
 }
