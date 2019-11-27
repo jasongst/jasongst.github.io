@@ -538,6 +538,9 @@ nav .column a:hover {
 }
 
 /* Modal */
+.modal {
+    z-index: 10000;
+}
 .modal .modal-card-title {
     text-align: center;
 }
