@@ -193,6 +193,11 @@ nav .navbar-burger {
     z-index: 1;
 }
 
+.burger-on a img {
+    height: 35px;
+    width: 60px;
+}
+
 .burger-on div{
     font-size: 20px;
     font-weight: bold;
@@ -654,6 +659,12 @@ footer .footer-button .button {
 footer .footer-button .button i {
     position: relative;
     top: -5px;
+}
+
+@media screen and (min-width: 745px) {
+    .burger-on {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 745px) {
