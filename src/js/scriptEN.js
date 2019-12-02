@@ -26,9 +26,9 @@ $(document).ready(function() {
     var position_top_raccourci = $("header").offset().top;
 
     var skills = $("#skills").offset().top - 10;
-    var project = $("#projects").offset().top -10;
-    var about = $("#about").offset().top - 10;
-    var contact = $("#contact").offset().top - 10;
+    var project = $("#projects").offset().top -20;
+    var about = $("#about").offset().top - 20;
+    var contact = $("#contact").offset().top - 50;
 
     var mid_windows = $(window).height() / 2;
 
@@ -197,6 +197,22 @@ $(document).ready(function() {
             auto: true,
             pause: 2500,
         });
+    });
+
+    $("a.cdin").click(function() {
+        $("#cdin").addClass("is-active");
+        carousel = $('.slider-cdin').bxSlider({
+            auto: true,
+            pause: 2500,
+        });
+    });
+
+    $("a.bde").click(function() {
+        $("#bde").addClass("is-active");
+    });
+
+    $("a.divers").click(function() {
+        $("#divers").addClass("is-active");
     });
 
     $("button.delete").click(function() {

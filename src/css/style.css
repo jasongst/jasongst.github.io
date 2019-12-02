@@ -469,6 +469,10 @@ nav .column a:hover {
     margin-bottom: 120px;
 }
 
+.projects .graph .card-content {
+    background-color: #f0f0f0;
+}
+
 .cache {
     position: absolute;
     height: 100%;
@@ -684,11 +688,11 @@ footer .footer-button .button i {
     }
 
     .presentation .text1 {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .presentation .text2 {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .presentation img {
