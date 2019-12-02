@@ -23,7 +23,6 @@ html, body {
 }
 
 .block {
-    width: 100%;
     border-bottom: solid 1px black;
     display: flex;
     flex-direction: column;
@@ -153,7 +152,7 @@ nav {
     -webkit-box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
     box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.15);
-    max-width: 100vw;
+    width: 100vw;
     position: fixed;
     top: 0;
 }
@@ -250,10 +249,6 @@ nav .column a:hover {
 
 /* BANNER */
 
-.banner {
-    width: 100%
-}
-
 .banner .banner-image{
     height: 100vh;
     width: 100vw;
@@ -308,7 +303,7 @@ nav .column a:hover {
 
 /* PRESENTATION */
 .presentation {
-    width: 100%;
+    width: 100vw;
     background-color: white;
     text-align: center;
     position: relative;
@@ -426,7 +421,7 @@ nav .column a:hover {
     background-size: 400% 400%;
     animation: changes 20s ease-in-out infinite; */
     position: relative;
-    width: 100%;
+    width: 100vw;
 }
 
 .skills h3 {
@@ -477,7 +472,6 @@ nav .column a:hover {
     background-color: white;
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 100%;
 }
 
 .skills-2 .is-2 {
@@ -496,7 +490,6 @@ nav .column a:hover {
 
 /* PROJECTS */
 .projects {
-    width: 100%;
     background-color: #363636;
     padding-top: 60px;
 }
@@ -595,7 +588,6 @@ nav .column a:hover {
 .contact {
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 100%;
 }
 
 .contact .title {
@@ -629,9 +621,6 @@ nav .column a:hover {
 }
 
 /* Footer */
-footer {
-    width: 100%;
-}
 
 footer .test{
     background-color: #363636;
