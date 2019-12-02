@@ -15,6 +15,8 @@
               crossorigin=""/>
 
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+        <script src="src/js/lazysizes.min.js" async=""></script>
     </head>
     <body>
         <!-- Pre-loader -->
@@ -253,7 +255,7 @@
                                     <div class="card-image">
                                         <a class="eggstronaut"><div class="cache"></div>
                                             <figure class="image is-4by3">
-                                            <img src="src/img/eggstronaut/eggstronaut.png" alt="Screen jeu python eggstronaut">
+                                            <img data-src="src/img/eggstronaut/eggstronaut.png" class="lazyload" alt="Screen jeu python eggstronaut">
                                         </figure></a>
                                     </div>
                                     <div class="card-content">
@@ -276,7 +278,7 @@
                                     <div class="card-image">
                                         <a class="gk"><div class="cache"></div>
                                             <figure class="image is-4by3">
-                                            <img src="src/img/gk/screen.png" alt="Screen site gafomi's klan">
+                                            <img data-src="src/img/gk/screen.png" class="lazyload" alt="Screen site gafomi's klan">
                                         </figure></a>
                                     </div>
                                     <div class="card-content">
@@ -299,7 +301,7 @@
                                     <div class="card-image">
                                         <a class="bde"><div class="cache"></div>
                                             <figure class="image is-4by3">
-                                                <img src="src/img/graphisme/BDE/nb.png" alt="Screen site gafomi's klan">
+                                                <img data-src="src/img/graphisme/BDE/nb.png" class="lazyload" alt="Screen site gafomi's klan">
                                             </figure></a>
                                     </div>
                                     <div class="card-content">
@@ -322,7 +324,7 @@
                                     <div class="card-image">
                                         <a class="cdin"><div class="cache"></div>
                                             <figure class="image is-4by3">
-                                                <img src="src/img/CDIN/screen.png" alt="Screen projet CDIN">
+                                                <img data-src="src/img/CDIN/screen.png" class="lazyload" alt="Screen projet CDIN">
                                             </figure></a>
                                     </div>
                                     <div class="card-content">
@@ -345,7 +347,7 @@
                                     <div class="card-image">
                                         <a class="divers"><div class="cache"></div>
                                             <figure class="image is-4by3">
-                                                <img src="src/img/graphisme/divers/logo.png" alt="Logo divers">
+                                                <img data-src="src/img/graphisme/divers/logo.png" class="lazyload" alt="Logo divers">
                                             </figure></a>
                                     </div>
                                     <div class="card-content">
@@ -377,10 +379,10 @@
                 </header>
                 <section class="modal-card-body">
                     <div class="slider slider-eggstronaut">
-                        <div><img src="src/img/eggstronaut/eggstronaut.png"></div>
-                        <div><img src="src/img/eggstronaut/credits.png"></div>
-                        <div><img src="src/img/eggstronaut/screen.png"></div>
-                        <div><img src="src/img/eggstronaut/victoire.png"></div>
+                        <div><img data-src="src/img/eggstronaut/eggstronaut.png" class="lazyload"></div>
+                        <div><img data-src="src/img/eggstronaut/credits.png" class="lazyload"></div>
+                        <div><img data-src="src/img/eggstronaut/screen.png" class="lazyload"></div>
+                        <div><img data-src="src/img/eggstronaut/victoire.png" class="lazyload"></div>
                     </div>
                     <div>
                         <p><b>Technologies utilisés :</b> Python3, PyQt5, MySQL, Photoshop (Pour les sprites/boutons/background) </p>
@@ -404,9 +406,9 @@
                 </header>
                 <section class="modal-card-body">
                     <div class="slider slider-gk">
-                        <div><img src="src/img/gk/screen.png"></div>
-                        <div><img src="src/img/gk/screen1.png"></div>
-                        <div><img src="src/img/gk/screen2.png"></div>
+                        <div><img data-src="src/img/gk/screen.png" class="lazyload"></div>
+                        <div><img data-src="src/img/gk/screen1.png" class="lazyload"></div>
+                        <div><img data-src="src/img/gk/screen2.png" class="lazyload"></div>
                     </div>
                     <div>
                         <p><b>Technologies utilisés :</b> HTML5 / CSS3 </p>
@@ -429,11 +431,11 @@
                 </header>
                 <section class="modal-card-body">
                     <div class="slider slider-portfolio">
-                        <div><img src="src/img/portfolio/screen1.png"></div>
-                        <div><img src="src/img/portfolio/screen2.png"></div>
-                        <div><img src="src/img/portfolio/screen3.png"></div>
-                        <div><img src="src/img/portfolio/screen4.png"></div>
-                        <div><img src="src/img/portfolio/screen5.png"></div>
+                        <div><img data-src="src/img/portfolio/screen1.png" class="lazyload"></div>
+                        <div><img data-src="src/img/portfolio/screen2.png" class="lazyload"></div>
+                        <div><img data-src="src/img/portfolio/screen3.png" class="lazyload"></div>
+                        <div><img data-src="src/img/portfolio/screen4.png" class="lazyload"></div>
+                        <div><img data-src="src/img/portfolio/screen5.png" class="lazyload"></div>
                     </div>
                     <div>
                         <p><b>Technologies utilisés :</b> HTML5 / CSS3 / JS (JQuery) / Bulma </p>
@@ -451,13 +453,13 @@
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
-                    <p class="modal-card-title title is-3">Portail IUT informatique</p>
+                    <p class="modal-card-title title is-3">Portail IUT info</p>
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <section class="modal-card-body">
                     <div class="slider slider-cdin">
-                        <div><img src="src/img/CDIN/screen1.png"></div>
-                        <div><img src="src/img/CDIN/screen2.png"></div>
+                        <div><img data-src="src/img/CDIN/screen1.png" class="lazyload"></div>
+                        <div><img data-src="src/img/CDIN/screen2.png" class="lazyload"></div>
                     </div>
                     <div>
                         <p><b>Technologies utilisés :</b> HTML5 / CSS3 / Bootstrap</p>
@@ -479,11 +481,11 @@
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <section class="modal-card-body">
-                    <img src="src/img/graphisme/BDE/liste.png">
-                    <img src="src/img/graphisme/BDE/logobd.png">
-                    <img src="src/img/graphisme/BDE/afficheSA3.png">
-                    <img src="src/img/graphisme/BDE/afficheangleterre.png">
-                    <img src="src/img/graphisme/BDE/otacos.png">
+                    <img data-src="src/img/graphisme/BDE/liste.png" class="lazyload">
+                    <img data-src="src/img/graphisme/BDE/logobd.png" class="lazyload">
+                    <img data-src="src/img/graphisme/BDE/afficheSA3.png" class="lazyload">
+                    <img data-src="src/img/graphisme/BDE/afficheangleterre.png" class="lazyload">
+                    <img data-src="src/img/graphisme/BDE/otacos.png" class="lazyload">
 
                     <br /><br />
 
@@ -507,10 +509,10 @@
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <section class="modal-card-body">
-                    <img src="src/img/graphisme/divers/phnxtri.png">
-                    <img src="src/img/graphisme/divers/logo.png">
-                    <img src="src/img/graphisme/divers/tournoi.png">
-                    <img src="src/img/graphisme/divers/banniere.png">
+                    <img data-src="src/img/graphisme/divers/phnxtri.png" class="lazyload">
+                    <img data-src="src/img/graphisme/divers/logo.png" class="lazyload">
+                    <img data-src="src/img/graphisme/divers/tournoi.png" class="lazyload">
+                    <img data-src="src/img/graphisme/divers/banniere.png" class="lazyload">
 
                     <br /><br />
 
