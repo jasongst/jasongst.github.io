@@ -344,76 +344,9 @@ nav .column a:hover {
     color: #8a8a8a;
 }
 
-.presentation .hexagon {
-    position: relative;
-    width: 300px;
-    height: 173.21px;
-    margin: 86.60px 0;
-    background-image: url(https://i.pinimg.com/236x/f6/e2/3a/f6e23a1074b4d94408935155f87355fc.jpg);
-    background-size: auto 334.8632px;
-    background-position: center;
-    border-left: solid 5px #000000;
-    border-right: solid 5px #000000;
-}
-
-.presentation .hexTop,
-.presentation .hexBottom {
-    position: absolute;
-    z-index: 1;
-    width: 212.13px;
-    height: 212.13px;
-    overflow: hidden;
-    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg);
-    background: inherit;
-    left: 38.93px;
-}
-
-.presentation .hexTop:after,
-.presentation .hexBottom:after {
-    content: "";
-    position: absolute;
-    width: 290.0000px;
-    height: 167.4315780649915px;
-    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-83.7158px);
-    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-83.7158px);
-    transform:          rotate(45deg) scaleY(1.7321) translateY(-83.7158px);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
-    background: inherit;
-}
-
-.presentation .hexTop {
-    top: -106.0660px;
-    border-top: solid 7.0711px #000000;
-    border-right: solid 7.0711px #000000;
-}
-
-.presentation .hexTop:after {
-    background-position: center top;
-}
-
-.presentation .hexBottom {
-    bottom: -106.0660px;
-    border-bottom: solid 7.0711px #000000;
-    border-left: solid 7.0711px #000000;
-}
-
-.presentation .hexBottom:after {
-    background-position: center bottom;
-}
-
-.presentation .hexagon:after {
-    content: "";
-    position: absolute;
-    top: 2.8868px;
-    left: 0;
-    width: 290.0000px;
-    height: 167.4316px;
-    z-index: 2;
-    background: inherit;
+.presentation img {
+    height: 400px;
+    width: 400px;
 }
 
 /* SKILLS */
@@ -730,6 +663,11 @@ footer .footer-button .button i {
     .contact .container .column b, .contact .container .column span{
         font-size: 18px;
     }
+
+    .presentation img {
+        height: 300px;
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 370px) {
@@ -748,6 +686,12 @@ footer .footer-button .button i {
     .presentation .text2 {
         font-size: 10px;
     }
+
+    .presentation img {
+        height: 250px;
+        width: 250px;
+    }
+
     .skills-2 .container .columns .column p {
         font-size: 15px;
     }
