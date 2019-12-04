@@ -676,6 +676,10 @@ footer .footer-button .button i {
         height: 300px;
         width: 300px;
     }
+
+    .projects .tabs-content-all .container .columns .column.is-one-third {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 370px) {
