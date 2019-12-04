@@ -178,32 +178,40 @@ $(document).ready(function() {
     $("a.eggstronaut").click(function() {
         $("#eggstronaut").addClass("is-active");
         carousel = $('.slider-eggstronaut').bxSlider({
+            mode: 'fade',
+            captions: true,
             auto: true,
-            pause: 2500,
+            pause: 3500
         });
     });
 
     $("a.gk").click(function() {
         $("#gk").addClass("is-active");
         carousel = $('.slider-gk').bxSlider({
+            mode: 'fade',
+            captions: true,
             auto: true,
-            pause: 2500,
+            pause: 3500
         });
     });
 
     $("a.portfolio").click(function() {
         $("#portfolio").addClass("is-active");
         carousel = $('.slider-portfolio').bxSlider({
+            mode: 'fade',
+            captions: true,
             auto: true,
-            pause: 2500,
+            pause: 3500
         });
     });
 
     $("a.cdin").click(function() {
         $("#cdin").addClass("is-active");
         carousel = $('.slider-cdin').bxSlider({
+            mode: 'fade',
+            captions: true,
             auto: true,
-            pause: 2500,
+            pause: 3500
         });
     });
 
