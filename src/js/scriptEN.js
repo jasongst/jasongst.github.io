@@ -175,6 +175,16 @@ $(document).ready(function() {
     //Modals
     var carousel = null;
 
+    $("a.horizon").click(function() {
+        $("#horizon").addClass("is-active");
+        carousel = $('.slider-horizon').bxSlider({
+            mode: 'fade',
+            captions: true,
+            auto: true,
+            pause: 3500
+        });
+    });
+
     $("a.eggstronaut").click(function() {
         $("#eggstronaut").addClass("is-active");
         carousel = $('.slider-eggstronaut').bxSlider({
