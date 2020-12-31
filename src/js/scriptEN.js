@@ -174,6 +174,15 @@ $(document).ready(function() {
 
     //Modals
     var carousel = null;
+    $("a.passionly").click(function() {
+        $("#passionly").addClass("is-active");
+        carousel = $('.slider-passionly').bxSlider({
+            mode: 'fade',
+            captions: true,
+            auto: true,
+            pause: 3500
+        });
+    });
 
     $("a.horizon").click(function() {
         $("#horizon").addClass("is-active");

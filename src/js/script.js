@@ -14,7 +14,7 @@ $(window).on('load', function() {
             typewriter.typeString('Développeur web')
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('Étudiant en DUT Informatique')
+                .typeString('Étudiant en L3 Informatique')
                 .pauseFor(2500)
                 .deleteAll()
                 .start();
@@ -176,6 +176,15 @@ $(document).ready(function() {
 
     //Modals
     var carousel = null;
+    $("a.passionly").click(function() {
+        $("#passionly").addClass("is-active");
+        carousel = $('.slider-passionly').bxSlider({
+            mode: 'fade',
+            captions: true,
+            auto: true,
+            pause: 3500
+        });
+    });
 
     $("a.horizon").click(function() {
         $("#horizon").addClass("is-active");
